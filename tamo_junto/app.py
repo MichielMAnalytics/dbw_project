@@ -35,6 +35,9 @@ if os.environ.get("OPENAI_API_KEY"):
 else:
     logger.warning("OPENAI_API_KEY is not set in environment")
 
+# ANSI color codes regex pattern
+ANSI_ESCAPE = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
+
 class StreamCapture:
     """Capture stdout to display in Streamlit"""
     def __init__(self, st_container):
@@ -45,6 +48,8 @@ class StreamCapture:
         self.auto_update = True
         # Create a placeholder for output
         self.output_placeholder = st_container.empty()
+        # Create a placeholder for important updates
+        self.update_placeholder = st_container.empty()
         
     def __enter__(self):
         sys.stdout = self
@@ -53,29 +58,40 @@ class StreamCapture:
     def __exit__(self, exc_type, exc_val, exc_tb):
         sys.stdout = self.stdout
         
+    def strip_ansi(self, text):
+        """Remove ANSI color codes from text"""
+        return ANSI_ESCAPE.sub('', text)
+        
     def write(self, text):
         self.buffer.write(text)
         self.stdout.write(text)
         
+        # Strip ANSI color codes for cleaner display
+        clean_text = self.strip_ansi(text)
+        
         # Accumulate text
-        self.output_text += text
+        self.output_text += clean_text
         
         # Update the display if auto update is enabled
         if self.auto_update:
             # Clear and update the placeholder with current text
             self.output_placeholder.empty()
             
-            # Use markdown for display (no key required)
-            formatted_output = f"```\n{self.output_text}\n```"
-            self.output_placeholder.markdown(formatted_output)
+            # Use a more readable format with scrolling
+            self.output_placeholder.code(self.output_text, language="")
             
-            # Check for important messages in the last few lines
-            last_lines = self.output_text.split('\n')[-10:]  # Get last 10 lines
-            last_text = '\n'.join(last_lines)
-            
-            if any(marker in last_text for marker in ["🤖 Agent:", "└── 🤖 Agent:", "Task output"]):
-                self.st_container.markdown("---")
-                self.st_container.markdown(f"**Important Update:**\n```\n{last_text}\n```")
+            # Check for important messages
+            if any(marker in clean_text for marker in ["Agent:", "Task Completion", "Final Answer"]):
+                # Extract the relevant part for display
+                lines = self.output_text.splitlines()
+                # Get the last 10 lines or fewer if not enough lines
+                last_lines = lines[-min(10, len(lines)):]
+                important_text = "\n".join(last_lines)
+                
+                # Update the important message display
+                self.update_placeholder.empty()
+                self.update_placeholder.markdown("### Important Update")
+                self.update_placeholder.code(important_text, language="")
         
     def flush(self):
         self.stdout.flush()
