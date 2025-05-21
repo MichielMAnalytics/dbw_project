@@ -29,6 +29,8 @@ crewai install
 
 ## Running the Project
 
+### Running the Crew from Command Line
+
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
 ```bash
@@ -38,6 +40,26 @@ $ crewai run
 This command initializes the tamo_junto Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+
+### Running the Interactive UI
+
+To launch the interactive web UI for inputting data and viewing the guardian evaluation process:
+
+```bash
+$ python -m tamo_junto.run_ui
+```
+
+Or use the entry point command if installed via pip:
+
+```bash
+$ run_ui
+```
+
+The UI allows you to:
+1. Input transaction details with the default values from config/inputs.py
+2. Add custom JSON inputs as needed
+3. View the thinking process of the guardian agents in real-time
+4. See the final evaluation outcome and report
 
 ## Understanding Your Crew
 

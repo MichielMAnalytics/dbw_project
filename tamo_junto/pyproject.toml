@@ -8,11 +8,13 @@ authors = [
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "crewai[tools]>=0.120.1,<1.0.0",
+    "streamlit>=1.32.0,<2.0.0",
 ]
 
 [project.scripts]
 tamo_junto = "tamo_junto.main:run"
 run_crew = "tamo_junto.main:run"
+run_ui = "tamo_junto.run_ui:main"
 train = "tamo_junto.main:train"
 replay = "tamo_junto.main:replay"
 test = "tamo_junto.main:test"
