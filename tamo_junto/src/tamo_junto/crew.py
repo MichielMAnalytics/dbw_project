@@ -8,7 +8,7 @@ from typing import List
 
 @CrewBase
 class TamoJunto():
-    """TamoJunto crew"""
+    """TamoJunto crew for evaluating disclosure requests"""
 
     agents: List[BaseAgent]
     tasks: List[Task]
@@ -20,38 +20,74 @@ class TamoJunto():
     # If you would like to add tools to your agents, you can learn more about it here:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
-    def researcher(self) -> Agent:
+    def regulatory_body(self) -> Agent:
         return Agent(
-            config=self.agents_config['researcher'], # type: ignore[index]
+            config=self.agents_config['regulatory_body'], # type: ignore[index]
             verbose=True
         )
 
     @agent
-    def reporting_analyst(self) -> Agent:
+    def major_financial_institution(self) -> Agent:
         return Agent(
-            config=self.agents_config['reporting_analyst'], # type: ignore[index]
+            config=self.agents_config['major_financial_institution'], # type: ignore[index]
             verbose=True
         )
 
-    # To learn more about structured task outputs,
-    # task dependencies, and task callbacks, check out the documentation:
-    # https://docs.crewai.com/concepts/tasks#overview-of-a-task
-    @task
-    def research_task(self) -> Task:
-        return Task(
-            config=self.tasks_config['research_task'], # type: ignore[index]
+    @agent
+    def privacy_advocacy_organization(self) -> Agent:
+        return Agent(
+            config=self.agents_config['privacy_advocacy_organization'], # type: ignore[index]
+            verbose=True
+        )
+
+    @agent
+    def independent_auditor(self) -> Agent:
+        return Agent(
+            config=self.agents_config['independent_auditor'], # type: ignore[index]
+            verbose=True
+        )
+    
+    @agent
+    def collation_analyst(self) -> Agent:
+        return Agent(
+            config=self.agents_config['collation_analyst'], # type: ignore[index]
+            verbose=True
         )
 
     @task
-    def reporting_task(self) -> Task:
+    def evaluate_disclosure_regulatory_task(self) -> Task:
         return Task(
-            config=self.tasks_config['reporting_task'], # type: ignore[index]
-            output_file='report.md'
+            config=self.tasks_config['evaluate_disclosure_regulatory'], # type: ignore[index]
+        )
+
+    @task
+    def evaluate_disclosure_financial_institution_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['evaluate_disclosure_financial_institution'], # type: ignore[index]
+        )
+
+    @task
+    def evaluate_disclosure_privacy_advocacy_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['evaluate_disclosure_privacy_advocacy'], # type: ignore[index]
+        )
+
+    @task
+    def evaluate_disclosure_auditor_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['evaluate_disclosure_auditor'], # type: ignore[index]
+        )
+
+    @task
+    def collation_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['collation_task'], # type: ignore[index]
+            output_file='final_guardian_report.md'
         )
 
     @crew
     def crew(self) -> Crew:
-        """Creates the TamoJunto crew"""
+        """Creates the Guardian Evaluation crew"""
         # To learn how to add knowledge sources to your crew, check out the documentation:
         # https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 

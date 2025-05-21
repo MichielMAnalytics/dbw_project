@@ -15,3 +15,53 @@ reporting_task:
     A fully fledged report with the main topics, each with a full section of information.
     Formatted as markdown without '```'
   agent: reporting_analyst
+
+evaluate_disclosure_regulatory:
+  description: >
+    Evaluate the disclosure request for transaction hash '{transaction_hash}' based on regulatory compliance. 
+    The reason for the request is: {request_reason}.
+    Provide your vote (YES/NO/ABSTAIN) and a brief justification.
+  expected_output: >
+    A vote (YES/NO/ABSTAIN) and a concise justification for the decision based on regulatory compliance and financial crime prevention.
+  agent: regulatory_body
+
+evaluate_disclosure_financial_institution:
+  description: >
+    Evaluate the disclosure request for transaction hash '{transaction_hash}' from the perspective of a major financial institution.
+    The reason for the request is: {request_reason}.
+    Provide your vote (YES/NO/ABSTAIN) and a brief justification.
+  expected_output: >
+    A vote (YES/NO/ABSTAIN) and a concise justification for the decision based on institutional risk, AML regulations, and due diligence.
+  agent: major_financial_institution
+
+evaluate_disclosure_privacy_advocacy:
+  description: >
+    Evaluate the disclosure request for transaction hash '{transaction_hash}' from a privacy advocacy standpoint.
+    The reason for the request is: {request_reason}.
+    Provide your vote (YES/NO/ABSTAIN) and a brief justification.
+  expected_output: >
+    A vote (YES/NO/ABSTAIN) and a concise justification for the decision, prioritizing individual financial privacy and data protection principles.
+  agent: privacy_advocacy_organization
+
+evaluate_disclosure_auditor:
+  description: >
+    Evaluate the disclosure request for transaction hash '{transaction_hash}' based on an independent auditor's perspective.
+    The reason for the request is: {request_reason}.
+    Provide your vote (YES/NO/ABSTAIN) and a brief justification.
+  expected_output: >
+    A vote (YES/NO/ABSTAIN) and a concise justification for the decision, based on objective assessment of the request's validity, proportionality, and adherence to protocols.
+  agent: independent_auditor
+
+collation_task:
+  description: >
+    Collate the evaluations and votes from the Regulatory Body, Major Financial Institution, Privacy Advocacy Organization, and Independent Auditor regarding the disclosure request for transaction hash '{transaction_hash}'.
+    Summarize the findings and present a final overview.
+  expected_output: >
+    A comprehensive report summarizing each guardian's vote and justification, highlighting agreements, disagreements, and the overall sentiment regarding the disclosure request for transaction hash '{transaction_hash}'.
+    Formatted as markdown without '```'.
+  agent: collation_analyst
+  context:
+    - evaluate_disclosure_regulatory
+    - evaluate_disclosure_financial_institution
+    - evaluate_disclosure_privacy_advocacy
+    - evaluate_disclosure_auditor

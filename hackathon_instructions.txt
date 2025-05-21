@@ -1,0 +1,601 @@
+Welcome to the Block and Order: AI-Agents for Compliance Hackathon!
+
+Step into a world where Compliance meets AI-Agents and blockchain powers innovation. This hackathon is your call to action—an opportunity for innovators, builders, and problem-solvers to develop solutions that make crypto safer and empower institutions to prevent fraud and streamline compliance.
+About the Hackathon
+Join top-tier partners and sponsors as we come together to build AI-driven agents that will shape a safer, smarter Web 3.0. Whether you’re passionate about preventing fraud, compliance automation, cutting-edge cybersecurity or data privacy, your ideas can transform the crypto ecosystem.
+With a global challenge to build AI powered solutions that detect or prevent fraud, automate regulatory oversight, and protect user privacy, this on-site hackathon is your platform for impact. Teams will present their solution live to a jury of industry leaders, with the chance to win and unlock exclusive follow-up opportunities.
+
+Event Details & Deadlines
+Sign-Up Deadline: May 14
+Online Introductory Session: May 16 at 13:00. Link will be available soon. 
+Date & Location: May 21 & 22, De Meervaart, Amsterdam
+Format: Build your project on-site during the two-day hackathon. Final presentations will be delivered live to a jury panel.
+Eligibility: Open to teams of various sizes with expertise spanning blockchain, AI, cybersecurity, and compliance.
+Participant Selection: Via Email. 
+
+
+Partners & Sponsors
+Supported by industry leaders including:
+Blockchain for Good Alliance, EY-Parthenon, ABN AMRO, Nosana, Chainalysis, UvA, Dutch Police, Alibaba Cloud, Mastercard, and many more.
+Nosana plays a key role as infrastructure sponsor, offering high-performance GPU computing power to train AI agents. 
+Prizes & Follow-Up
+
+Each track will have two prize winners who will share a total of 3,000 USDT. In addition, the Dutch Blockchain Week jury will select two overall winners and two runner-ups per track, all of whom will receive a trophy.
+The prize for each track up to 3,000 USDT. Additional rewards may include:
+Industry mentorship & incubation follow-up hackathons
+DEPIN equipment
+Nosana credits, story-telling and investment opportunities
+Exclusive showcases with BCNL partners
+Nomination for international events like IBCOL (e.g., Hong Kong or U.S. hackathons)
+Personal Tech Coaching and/or branded Learning Track, via TechPros: 
+Teams meeting the TechPros impact-criteria can win a budget of coaching support, given personal needs. 
+Teams meeting the education/ learning criteria can win a free intake to define a learning track, based on the winning project
+
+Track 1: BGA Hackathon Bounty – Cybersecurity & Compliance for Public Good
+In the wake of high-profile cybersecurity breaches—including the recent Bybit hack—the need for proactive, blockchain-native threat detection is greater than ever. In response, the BGA sponsors this special track at the Block & Order: AI-Agents for Compliance Hackathon, inviting builders to create AI-powered blockchain compliance tools that target real-world, high-risk vulnerabilities in Web3 ecosystems.
+🎯 The Challenge:
+Build a prototype for an AI-agent-based blockchain security solution that can:
+Identify and alert on-chain activity involving known scammer addresses or wallets linked through common patterns (e.g., chain-hopping, mixers, sudden token transfers).
+
+
+Perform predictive network analysis to classify wallet addresses based on behavioral risk patterns—e.g., excessive token minting, dump cycles, rug pulls.
+We encourage participants to work with known open datasets (e.g., Chainalysis alerts, Etherscan tags, ScamSniffer reports) and build tools that can surface suspicious transactions before major harm occurs. For this hackathon, a working prototype is all that is needed to showcase the features and how it works. 
+🧠 Focus Areas (pick one or both):
+
+Agent-Based Scam Detection
+
+
+Develop a lightweight on-chain AI agent that continuously scans activity and alerts the user when interacting with potentially fraudulent addresses based on existing scam databases and network indicators.
+
+
+Predictive Risk Classifier for Wallets
+
+
+Design a network analysis model (with optional AI enhancements) that can analyze wallet behavior and assign risk scores to addresses in real-time, enabling developers, exchanges, and users to avoid malicious actors.
+💡 Why This Matters:
+The blockchain industry continues to suffer from reputational damage due to fraud and scams. A security layer powered by AI agents, integrated natively with blockchains, can democratize trust and restore user confidence—especially in high-risk regions or use cases like DeFi, NFT trading, and peer-to-peer transfers.
+🧾 Definitions:
+
+
+Suspicious Transactions:
+ Transactions that exhibit patterns such as rapid large-volume transfers, interactions with flagged addresses, token honeypots, or significant deviation from historical behavior.
+
+
+Known Scammer Patterns:
+ Wallets involved in phishing campaigns, bridge exploits, token approval drainers, or laundering via mixers. Datasets may include sources like Chainabuse, De.Fi, SlowMist, and Etherscan’s tags.
+
+
+🏁 What a Good Prototype Can Look Like:
+
+
+The AI agent is able to flag a transaction or wallet before interaction.
+
+
+It can generate an explainable alert (e.g., “This address was flagged due to connection with X scam pattern”).
+
+
+Easy-to-integrate API or interface for builders and end-users.
+
+
+Bonus: A dashboard showing live threat detection or simulation.
+💰 Bounty Prize Pool: 3000 USDT
+🏅 Up to 2 winning teams will receive prizes after a judging process. The winner of the track will receive $2000 and the runner-up $1000. 
+
+At BGA’s discretion, winners may also qualify for BGA’s incubation program and receive:
+ ✅ Equity-free grants
+ ✅ Marketing & networking support
+ ✅ Direct access to regulators & industry mentors
+ ✅ Potential exposure and introduction to our founding company, Bybit
+🛠 Track Rules
+✔ Open to all teams building AI-driven compliance/security solutions on blockchain.
+ ✔ Solutions must be blockchain-agnostic (use any chain that fits your use case).
+ ✔ Submit a pitch deck + recorded demo via the event platform before the deadline.
+ ✔ All projects must align with BGA’s mission of using blockchain for public good.
+
+🧠 Judging Criteria
+Submissions will be evaluated based on the following:
+✅ Technical Feasibility (25%) – Is the AI agent functional, secure, and scalable?
+✅  Innovation (20%) – Does the solution offer a novel or improved approach to blockchain security?
+✅ Regulatory Compliance (20%) – Is it aligned with current AML laws, Travel Rule, or other regulations?
+✅  Privacy & Ethics (15%) – Does the solution strike the right balance between transparency and data protection?
+✅  Pitch & Presentation (20%) – Is the concept clearly articulated and compelling to both technical and business audiences?
+Join us in securing the future of Web3.
+ 🚀 Hack for impact. Build for trust. Innovate for good.
+
+
+About the BGA:
+Launched in April 2024 by Bybit and global Web3 leaders, the Blockchain for Good Alliance (BGA) is a long-term collaborative non-profit initiative with key partners with the main goal to contribute to societal good by using blockchain technology to solve real-world problems. 
+Our goal is to position blockchain as a tool with the capabilities to address some of the most pressing global challenges, aligned with the 17 Sustainable Development Goals of the United Nations.
+
+
+
+Track 2: Set the standard with Project SPARC– Empowering Privacy with AI-Driven Compliance
+Project SPARC
+Project SPARC aims to strengthen the sovereignty and resilience of the European payment landscape by using public blockchain infrastructure to enable compliant, privacy-preserving payments. This open, collaborative initiative brings together a broad community to co-develop an open-source protocol that redefines the balance between regulatory compliance and uncompromised user privacy.
+Project SPARC has adopted a public-private partnership model to explore user-driven, technological, and regulatory requirements for banks that want to serve as trusted access points to the decentralized world of digital money. The goal: define foundational standards for the financial industry while allowing institutions to build new services and business models bringing traditional finance and decentralised finance together..
+🚀 About the Track
+The project is already developing a protocol that brings privacy onto Ethereum L1 via Privacy Pools as a first step. This track challenges you to build the component that enables selective disclosure of transactions through a network of guardians. These guardians—whether institutions, individuals, or AI agents—serve as decentralized gatekeepers. A transaction can only be de-anonymized when a quorum of guardians validates a legitimate compliance need. This concept can be found in this paper.
+As of now, no transaction data is available to train AI models as the project is still in development phase. Therefore, your solution should be hypothesis-driven and extensible, ready for future implementation and scaling. 
+
+
+🔹 Your Mission:
+
+Develop an AI-agent-driven blockchain prototype that empowers guardians to:
+Protect user privacy by default
+
+
+Enable on-demand de-anonymization only in response to confirmed regulatory breaches
+
+
+Operate transparently and fairly through a quorum-based decision model
+
+
+Participate based on a clear and sustainable incentive mechanism
+
+🔹 Focus Areas:
+1. Guardian-Based Selective Disclosure
+ Design a governance model where transaction de-anonymization requires a quorum of guardians, each representing different institutional or societal interests (e.g., regulators, financial institutions, civic entities).
+No single actor should be able to trigger disclosure alone
+
+
+Guardians may optionally request additional context, such as verifiable credentials (VCs), to assess whether de-anonymization is justified
+2. Incentive Design for Guardians
+ Propose a tokenomics or reputational incentive model that ensures reliable and honest guardian behavior. Incentives may include:
+Monetary: monthly allowance or usage-based rewards
+
+
+Reputation-based: linked to personal or institutional credibility
+
+
+Trust-based: participation of entities with public responsibility (e.g., supervisory authorities)
+3. Smart Data Hypotheses and Risk Detection
+Hypothesize the types of behavioral or transactional data required for AI agents and guardians to flag non-compliant activity in real time. Consider how blockchain analytics or risk scoring could support decision-making.
+4. Alignment with Real-World Standards
+Ensure that your compliance logic can be mapped to frameworks like the NVB Baseline Expected Transaction Profile or similar KYC/AML best practices.
+5. Scalability & Integration
+Design your solution to integrate smoothly with third-party regulatory tooling and scale across both DeFi platforms and traditional financial institutions.
+
+💰 Bounty Prize Pool: 3000 USDT
+🏅 Up to 2 winning teams will receive prizes after a judging process. The winner of the track will receive $2000 and the runner-up $1000. 
+At Project SPARC’s discretion, winners may also qualify for exclusive benefits including:
+ ✅ Access to mentorship sessions
+ ✅ Follow-up development support
+ ✅ Opportunities to present their solutions to leading financial institutions and regulators
+🛠 Track Rules:
+ ✔ Open to all teams building open source AI-driven compliance solutions on blockchain
+ ✔ Solutions must be blockchain-agnostic (use any chain that fits your use case).
+ ✔ Submit a pitch deck and recorded demo via the event platform before the deadline.
+ ✔ All projects must align with our mission of empowering privacy while ensuring robust compliance.
+🧠 Judging Criteria
+Submissions will be evaluated based on the following:
+✅ Technical Feasibility (25%) – Is your AI agent capable of privacy-aware, real-time compliance monitoring?
+✅ Innovation (20%) – Does the solution advance the future of compliant privacy tech?
+✅ Regulatory Compliance (20%) – Is it aligned with FATF Travel Rule, AML guidelines, and banking standards?
+✅ Privacy & Ethics (15%) – Does it minimize risks while protecting user autonomy and anonymity?
+✅ Pitch & Presentation (20%) – Is the solution well-articulated, strategic, and actionable?
+
+Join us in empowering the future of secure, privacy-centric financial ecosystems.
+ 🚀 Hack for impact. Build for trust. Innovate for good.
+
+AI Agent Hackathon Participant Guide
+Welcome to the Block and Order: AI-agents for Compliance Hackathon
+This hackathon challenges you to build and deploy a fully functioning AI agent that aligns with the objectives of your selected track. Whether you're focused on public-sector compliance, fraud detection, or privacy-preserving disclosure, your solution should go beyond just writing code: it must run on real infrastructure, process meaningful data, and demonstrate real-world utility.
+Your agent should also adhere to relevant AML regulations and other compliance requirements specific to your track, and you won’t be on your own. Throughout the event, you’ll have access to domain experts who can support you on these aspects and help you fine-tune your solution.
+By the end of the hackathon, your team will present a cloud-deployed agent that clearly demonstrates its decision-making capabilities within the context of your track’s theme.
+Context: Why We Build AI Agents for Compliance
+Fraud, financial crime, and privacy risks are growing concerns in today’s increasingly digital economy. As blockchain technology becomes a foundation for financial transactions, and AI evolves to drive automation and decision-making, new opportunities and responsibilities emerge.
+Blockchain offers transparency, security, and traceability, while AI agents can enhance regulatory oversight and operational efficiency. Together, these technologies have the potential to reshape compliance, making it more scalable, accurate, and privacy-conscious.
+ From detecting wallet-based scam patterns and classifying risk behavior to enabling guardian-based selective disclosure and protecting user anonymity,, your work has the power to:
+Uncover patterns of suspicious transactions and financial crime
+
+
+Identify threats before they cause harm
+
+
+Automate regulatory processes at scale
+
+
+Preserve privacy while enabling responsible oversight
+
+
+Stronger compliance and fraud prevention are key to restoring trust in Web3, accelerating adoption, and aligning innovation with public good.
+At this hackathon, your mission is to design and deploy AI agents that advance this vision—solutions that are not only functional but responsible, compliant, and impactful.
+
+What’s Expected of You
+You will design and build an AI agent that combines model intelligence with decision logic and system integration. Each team is expected to:
+Address the goals of one of the two tracks (see below)
+
+
+Use real-world data and infrastructure to power the solution
+
+
+Ensure the solution aligns with relevant compliance or public-good criteria
+
+
+Deploy and demo a working version of your agent by the end of the event (MVP) 
+
+Understanding the AI Agent
+In this hackathon, an “AI agent” is more than just an LLM. It is a system that can:
+Process inputs via messaging interfaces, APIs, or data streams
+
+
+Reason over data using ML/LLM models
+
+
+Take actions or produce outputs aligned with a goal (e.g. flagging suspicious transactions, issuing a verifiable credential, querying the blockchain)
+
+
+An agent typically consists of:
+A core model (e.g. DeepSeek, LLaMA, Mistral, OpenAI, Gemini, Claude, Qwen)
+
+
+An orchestration layer (e.g. custom code, LangChain, Autogen, MCP, Semantic Kernel)
+
+
+Memory and context handling (e.g. embeddings, databases, prompts)
+
+
+External tools or data connections (e.g. RPC nodes, compliance APIs, VC verifiers)
+
+
+You are free to choose your architecture and stack, as long as the result is demonstrable and solves the challenge effectively.
+Model Approaches: You Choose
+Depending on your team’s strengths, you can take one of the following approaches:
+1. Use a Pre-Trained Model
+ Focus on orchestration, logic, and integration. Ideal for teams who want to prioritize speed and function. Examples: OpenAI, Gemini, DeepSeek, Mistral, Qwen.
+2. Fine-Tune an Existing Model
+ Start from a base model and refine it using your own dataset. Nosana fully supports this approach. Ideal for teams wanting to customize intelligence without building from scratch.
+3. Train a Model from Scratch
+ Advanced teams may choose to train their own model using Nosana’s GPU infrastructure. This offers full control, but may be time- and resource-intensive.
+
+Infrastructure and Tools
+The following tools and platforms are available to all participants:
+Nosana – AI Compute Platform
+Nosana provides the full stack for AI model development:
+GPU access for training and fine-tuning
+
+
+Inference support and endpoint hosting
+
+
+Notebook environments (e.g. Jupyter)
+
+
+Support for frameworks such as LLaMA, DeepSeek, Mistral, Ollama
+Setup:
+Register via the hackathon landing page (link shared soon)
+
+
+Request GPU credits
+
+
+Run workloads via the Nosana dashboard
+ 📄 Documentation: docs.nosana.com
+
+
+AliCloud – Cloud & Blockchain Infrastructure
+AliCloud can be used for:
+Hosting the frontend / backend for your deployed agent (e.g., API or interface)
+
+
+Pretrained AI models accessible through API.
+
+
+Interacting with smart contracts and on-chain data
+
+
+RPC access through Zan.top: You can log in with your GitHub or Google account, or make a free account to get access to RPC endpoints to public blockchains. Quota limits for the free tier apply and cannot be increased without purchase. (In case this does not work, Nosana can give your team an temporary key for the Solana blockchain).
+You will receive access to sandbox/demo accounts for your deployments. Docker-based deployment is supported.
+Setup:
+Navigate to the following link: https://account.alibabacloud.com/login/login.htm 
+Use the credentials that have been provided to you to log in.
+Services to get you started
+Service name
+Description
+Documentation Link
+Console Link
+Elastic Compute Service
+Virtual machines with support for e.g. Docker images.
+https://www.alibabacloud.com/help/en/ecs/getting-started/quick-start 
+https://ecs.console.aliyun.com/home 
+Model Studio
+Pretrained AI models accessible through API, similar to Gemini & OpenAI. Currently supports the latest Qwen3 models.
+https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio 
+https://bailian.console.alibabacloud.com/ 
+Object Storage Service (OSS)
+Object storage service, similar to AWS S3 or GCP Cloud Bucket. Can be used for static website hosting.
+https://www.alibabacloud.com/help/en/oss/getting-started/console-quick-start 
+https://oss.console.aliyun.com/overview 
+PolarDB
+Cloud-native relational database. Supports MySQL, Postgres, and Oracle.
+Postgres
+MySQL
+Oracle
+https://polardb.console.aliyun.com/overview 
+
+For any additional questions or support with Alibaba Cloud, feel free to shoot a message to Daniel Molenaars (contact details will be provided).
+
+Optional Tools & APIs & Datasets
+Compilot: 
+- https://docs.compilot.ai/workflows/individualscreening 
+- https://docs.compilot.ai/workflows/signaturegating 
+- https://docs.compilot.ai/workflows/compliantairdrop 
+- https://docs.compilot.ai/workflows/tms/setup#wallet-screening 
+- https://docs.compilot.ai/developers/api/main-api/individuals/individuals-router-wallets-re-score-wallet 
+Documents: https://docs.compilot.ai/ 
+
+
+Public sources: You may use publicly available API’s or datasets about blacklisted wallets or transaction flows from known hackers.
+APIs for Wallet Risk Scoring and Compliance
+1. AnChain.AI Wallet Risk Checker (BEI™ API)
+Description: An AI-powered tool that analyzes wallet behaviors to assign risk scores, label entities, and detect suspicious activities across multiple blockchains. It aids in ensuring AML/CFT compliance.
+
+
+Access: AnChain.AI Wallet Risk Checker
+
+
+2. Chainabuse API
+Description: Provides real-time data on malicious crypto activities reported by users and experts. The API allows verification of whether specific wallet addresses or URLs have been reported as malicious.
+
+
+Access: Chainabuse API Documentation
+
+
+3. BlockSec Wallet Screening API
+Description: Offers compliance risk assessments for wallet addresses, identifying factors like involvement in scams, sanctions, or other illicit activities. It supports multiple blockchains and provides detailed risk indicators.
+
+
+Access: BlockSec Wallet Screening APIMetaSleuth
+
+
+4. HackScan by LazarusBounty
+Description: An open-source tool designed to track fund flows associated with hack events and uncover malicious hacker addresses. It provides APIs to retrieve hacker addresses and monitor suspicious activities.
+
+
+Access: HackScan API Referencesdocs.lazarusbounty.com
+
+
+ Public Datasets for Training and Analysis
+1. Elliptic Dataset
+Description: Contains over 200,000 Bitcoin transactions labeled as licit, illicit, or unknown. It's designed for research into fraudulent transaction detection and financial forensics.
+
+
+Access: Elliptic Dataset on Kaggle
+
+
+2. Elliptic++ Dataset
+Description: An extension of the original Elliptic dataset, providing a graph network of Bitcoin transactions and wallet addresses, facilitating advanced analyses.
+
+
+Access: Elliptic++ on GitHub
+
+
+3. Labelled Ethereum Addresses
+Description: A dataset containing Ethereum addresses labeled for various illicit activities, including phishing, scams, and hacks. Useful for training models to detect fraudulent behaviors on the Ethereum blockchain.
+
+
+Access: Labelled Ethereum Addresses on Kaggle
+
+
+4. Real-CATS Dataset
+Description: Comprises over 100,000 criminal and 100,000 benign cryptocurrency addresses, along with their transaction profiles. It's designed for developing and assessing detection methods in cryptocurrency cybercrime.
+
+
+Access: Real-CATS on GitHub
+
+
+5. OFAC Sanctioned Cryptocurrency Addresses
+Description: The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) provides a list of digital currency addresses associated with sanctioned individuals and entities.
+
+
+Access: OFAC Sanctions List
+
+
+6. 0xB10C's OFAC Sanctioned Digital Currency Addresses
+Description: A GitHub repository that extracts and maintains a list of sanctioned digital currency addresses from the OFAC SDN List, covering various cryptocurrencies.
+
+
+Access: 0xB10C's Repository
+
+
+7. Ultrasound.money's OFAC Ethereum Addresses
+Description: A community-maintained list of Ethereum addresses added to the OFAC SDN List, available in CSV format with associated entity information.
+
+
+Access: Ultrasound.money's Repository
+
+
+8. Blockchain-Enabled Dataset for Supply Chain
+Description: A dataset focusing on blockchain applications in supply chain management, useful for understanding transaction flows and behaviors.
+
+
+Access: Supply Chain Dataset on Kaggle
+
+
+9. Bitcoin Wallets Data with Fraudulent Activities
+Description: Contains detailed information about Bitcoin wallet addresses involved in fraudulent activities, including transaction history and balances.
+
+
+Access: Bitcoin Wallets Dataset on Kaggle
+10. Bitcoin Address Behavior Dataset https://www.kaggle.com/datasets/lemonx/babd13 
+
+
+
+Track-Specific Examples for Tools & Concepts
+Track 1 – ABN AMRO / EY / UvA: Privacy-Preserving Compliance
+Explore tools like:
+Verifiable Credentials (VCs): Standards for privacy-preserving identity and compliance
+ ➤ verifiablecredentials.dev
+
+
+Selective Disclosure & Zero-Knowledge Proofs: Use partial credential verification without revealing full identity
+
+
+Compilot APIs: Useful for suspicious behavior detection and compliance logic
+
+
+Track 2 – BGA: Blockchain for Good
+Solutions may address public-sector or civil-society use cases
+
+
+Explore concepts like:
+
+
+Encrypted ML (e.g. Zama) as inspiration for secure, decentralized processing
+ ➤ zama.ai
+
+
+Multi-party data collaboration, identity, or fraud detection
+
+ Hackathon Rules, Terms & Conditions
+Published on May 2, 2025
+By registering and participating in the “Block and Order: AI-Agents for Compliance Hackathon” (the “Hackathon”), participants agree to the following Terms and Conditions:
+1. Organizers & Legal Jurisdiction
+The Hackathon is organized by BCNL Foundation as part of Dutch Blockchain Week 2025. The event is governed by Dutch law, and any disputes shall be resolved in the Netherlands.In the event of conflict between these Terms and any third-party platform terms (e.g., GitHub, Google), these Hackathon Terms shall prevail for all activities and submissions related to the Hackathon.
+2. Intellectual Property (IP) Rights
+Participants retain full ownership of all ideas, code, models, and content developed during the Hackathon.
+No license, transfer, or assignment of IP is granted to BCNL, MoleDAO, or any sponsors unless explicitly agreed upon in writing post-event.
+If a sponsor expresses commercial interest in a project, good faith negotiations will take place, but participants are under no obligation to proceed.
+Code may be submitted via a public GitHub repository with an open-source license (e.g., MIT, Apache 2.0) unless otherwise agreed with the organizers.
+3. Data Protection & Privacy (GDPR-Compliant)
+Personal data collected during registration (e.g., name, email, team info) will be used solely for organizing and executing the Hackathon. All data is stored in compliance with the EU General Data Protection Regulation (GDPR). Participants may request data deletion or correction at any time by contacting devin@dutchblockchainweek.com. BCNL will not share personal data with sponsors without explicit consent.
+4. Use of External Platforms
+All teams are encouraged to use Nosana for AI compute workloads and are encouraged to use AliCloud for deployment.
+Participants must comply with the respective platform Terms of Use (Nosana, AliCloud), but IP remains with the participants.
+Public datasets and APIs (e.g., Chainalysis, Compilot) are to be used in accordance with their own terms and licenses.
+In case of conflicting terms between this document and any third-party platform, these Hackathon Terms shall take precedence.
+5. Submission Requirements
+To qualify for judging, teams must submit their project by May 22, 15:00 CET, via the GitHub Repo: https://github.com/dutchblockchainweek/hackathon.
+Your submission should include:
+A pitch deck outlining the problem, solution, architecture, and compliance alignment
+
+
+A working MVP or demo (recorded or live) in any form
+
+
+Optionally: a public GitHub repository with project code and README
+
+
+Optionally: architecture diagrams, documentation, or impact description
+6. Eligibility
+Open to individuals and teams (max. 6 people), aged 18+
+Participants must attend the Hackathon in person on May 21–22 in Amsterdam
+No prior experience in AI or blockchain is required
+7. Code of Conduct
+All participants agree to the Contributor Covenant Code of Conduct.
+ Respect, inclusion, and professional behavior are mandatory.
+ Any harassment, discrimination, or disruptive behavior will result in disqualification.
+8. Project Requirements
+All work must be created during the Hackathon (using pre-existing frameworks/libraries is allowed)
+Teams are encouraged to use Nosana’s GPU resources for training/inference
+Generative AI tools (e.g., ChatGPT, GitHub Copilot) are permitted but must be disclosed in the README
+Participants are responsible for ensuring that any generative AI output does not infringe third-party rights and complies with open-source licensing.
+9. Liability & Disclaimers
+BCNL and its sponsors disclaim all liability for system outages, data loss, or issues with external tools.
+Participants are responsible for the legality and ethical standards of their submissions.
+No warranties are provided regarding platform availability, data integrity, or IP protection beyond these Terms.
+10. Dispute Resolution
+In case of disagreement between participants and the organizers, BCNL will offer mediation.
+All legal proceedings must take place in the Netherlands and are subject to Dutch law.
+
+Timeline & Logistics
+The Hackathon follows a structured timeline designed to maximize productivity and mentorship. With limited time, thorough preparation after the introductory session will be crucial for success.
+
+Introduction Session – May 16, 13:00 (Online)
+
+ This mandatory online session will prepare all participants for the hackathon. We’ll provide practical instructions on the tracks and the tools and platforms (e.g. Nosana, AliCloud, Compilot), and walk you through what to expect during the event. 
+You’ll also get the chance to ask questions and connect directly with track sponsors and in-kind partners. A great moment to clarify your approach, understand available resources, and get inspired.
+
+During The Event 
+A structured event timeline will be followed throughout both days. Please ensure that you arrive on time and stay engaged with the scheduled sessions.
+If you have any questions during the event, feel free to contact devin@dutchblockchainweek.com or speak to one of the on-site volunteers.
+
+Day 1 (May 21) 
+9:00–09:15 | Walk-In
+9:20–10:00 | Official Hackathon Kickoff: Challenge Briefing, Sponsor Insights 
+10:00–10:30 | Dutch Blockchain Week Plenary Kickoff (Red Room)
+10:30–13:00 | Hacking Sprints with Ongoing Mentorship
+13:00–14:00 | Lunch & Break*  
+14:00–16:30 | Hacking Sprints with Ongoing Mentorship
+16:30–17:00 | Check-In Sessions, Mentor Feedback
+17:00–18:00 | Last adjustments 
+
+Day 2 (May 22) 
+8:45–9:00 | Walk-in
+9:00–9:45 | Panel (Dutch Police, AFM, Nosana, ABN AMRO) 
+9:45–13:00 | Hacking Sprints with Ongoing Mentorship
+13:00–14:00 | Lunch & Break*
+14:00–15:00 | Final Refinements & Pitch Preparation
+15:00–16:00 | Power Pitches 
+16:00–16:30 | Jury Evaluation
+16:30–17:15 | Announcement of Winners & Final Word Sponsors & Organizers
+17:00–22:00 | OKX Official DBW Afterparty with Food & Drinks
+*Please take your laptops with you during kickoff & lunch.
+Need Help?
+Support will be available before and during the event from:
+Nosana engineers (AI infrastructure, GPUs, model hosting)
+
+
+AliCloud engineers (deployment, blockchain access)
+
+
+Compilot engineers
+
+
+Hackathon organizers (general help, team coordination)
+
+
+Track owners 
+
+
+Subject-matter experts (Compliance, Fraud, AI setup, Dataset Access)
+*You can find all experts in the excel sheet that is sent along 
+Summary to-do-list
+Pick a track and design an agent aligned with the challenge goals
+
+
+Decide whether to use, fine-tune, or train your model
+
+
+Register on Nosana and request GPU credits
+
+
+Register on AliCloud and prepare a deployment environment
+
+
+Build your agent using any orchestration logic/framework you prefer
+
+
+Deploy and demo your working solution
+
+
+We recommend setting up your environment and tooling before the hackathon begins. Preparatory onboarding sessions will walk you through this.
+
+Jury
+To ensure a fair and high-quality evaluation of all submissions, we have carefully selected a panel of expert judges representing key domains in compliance, AI, blockchain, and public-private innovation. Each jury member brings a unique perspective — from law enforcement and academia to cutting-edge tech and financial institutions.
+Our jury will assess projects based on criteria such as innovation, feasibility, impact, and alignment with the hackathon’s core objectives.
+Meet the Jury:
+Glenn Tan – Blockchain for Good Alliance (BGA)
+
+
+Sjoerd Dijkstra – Nosana
+
+
+Barend Brands– Dutch National Police
+
+
+Devin Schoor – BCNL Foundation
+
+
+Simon Trimborn – University of Amsterdam (UvA)
+
+
+Elien van Riet  – ABN AMRO
+
+
+Lu Zheng - IBCOL
+
+Follow-up & Implementation
+Post-hackathon development: Winning teams can further develop their solutions with financial institutions or regulators.
+Potential token model: If a token model is introduced, it could attract additional investments.
+Demo events: The best solutions may be presented to relevant industry partners.
