@@ -41,8 +41,10 @@ class StreamCapture:
         self.st_container = st_container
         self.buffer = io.StringIO()
         self.stdout = sys.stdout
-        self.thinking_output = ""
+        self.output_text = ""
         self.auto_update = True
+        # Create a placeholder for output
+        self.output_placeholder = st_container.empty()
         
     def __enter__(self):
         sys.stdout = self
@@ -55,23 +57,25 @@ class StreamCapture:
         self.buffer.write(text)
         self.stdout.write(text)
         
-        # Capture ALL terminal output to display in the UI
-        # This ensures we see everything that appears in the terminal
-        # self.thinking_output += text
+        # Accumulate text
+        self.output_text += text
         
-        # Update the Streamlit display, focusing on the most important parts
+        # Update the display if auto update is enabled
         if self.auto_update:
-            # Display the full thinking process in a scrollable area
-            self.st_container.text_area(
-                "Agent Thinking Process", 
-                self.thinking_output, 
-                height=600
-            )
+            # Clear and update the placeholder with current text
+            self.output_placeholder.empty()
             
-            # Auto-scroll to the latest content
-            if "🤖 Agent:" in text or "└── 🤖 Agent:" in text or "Task output" in text:
+            # Use markdown for display (no key required)
+            formatted_output = f"```\n{self.output_text}\n```"
+            self.output_placeholder.markdown(formatted_output)
+            
+            # Check for important messages in the last few lines
+            last_lines = self.output_text.split('\n')[-10:]  # Get last 10 lines
+            last_text = '\n'.join(last_lines)
+            
+            if any(marker in last_text for marker in ["🤖 Agent:", "└── 🤖 Agent:", "Task output"]):
                 self.st_container.markdown("---")
-                self.st_container.markdown(f"**Latest update:**\n```\n{text}\n```")
+                self.st_container.markdown(f"**Important Update:**\n```\n{last_text}\n```")
         
     def flush(self):
         self.stdout.flush()
