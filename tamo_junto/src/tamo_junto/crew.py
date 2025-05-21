@@ -55,25 +55,25 @@ class TamoJunto():
         )
 
     @task
-    def evaluate_disclosure_regulatory_task(self) -> Task:
+    def evaluate_disclosure_regulatory(self) -> Task:
         return Task(
             config=self.tasks_config['evaluate_disclosure_regulatory'], # type: ignore[index]
         )
 
     @task
-    def evaluate_disclosure_financial_institution_task(self) -> Task:
+    def evaluate_disclosure_financial_institution(self) -> Task:
         return Task(
             config=self.tasks_config['evaluate_disclosure_financial_institution'], # type: ignore[index]
         )
 
     @task
-    def evaluate_disclosure_privacy_advocacy_task(self) -> Task:
+    def evaluate_disclosure_privacy_advocacy(self) -> Task:
         return Task(
             config=self.tasks_config['evaluate_disclosure_privacy_advocacy'], # type: ignore[index]
         )
 
     @task
-    def evaluate_disclosure_auditor_task(self) -> Task:
+    def evaluate_disclosure_auditor(self) -> Task:
         return Task(
             config=self.tasks_config['evaluate_disclosure_auditor'], # type: ignore[index]
         )
