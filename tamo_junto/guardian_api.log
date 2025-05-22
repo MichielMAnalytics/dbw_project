@@ -525,3 +525,780 @@ LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
 Th...
 2025-05-22 10:05:06,928 - api - INFO - Successfully extracted summary
 2025-05-22 10:05:06,928 - api - INFO - Evaluation completed successfully
+2025-05-22 11:11:50,554 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:13:12,367 - api - INFO - Starting evaluation for transaction: TxHash_DivorceJudgment_Obstruction
+2025-05-22 11:13:12,367 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': 'TxHash_DivorceJudgment_Obstruction', 'request_reason': 'Court Appointed Forensic Audit Enforcement of Divorce Judgment Asset Concealment'}
+2025-05-22 11:13:12,376 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:13:12,383 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:13:15,524 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:13:15,529 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:13:15,529 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:15,529 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:15,530 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:15,536 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:13:19,209 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:13:19,210 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:13:19,210 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:19,210 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:19,211 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:19,215 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:13:22,589 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:13:22,589 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:13:22,590 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:22,590 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:22,592 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:22,595 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:13:25,659 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:13:25,660 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:13:25,660 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:25,660 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:25,661 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:25,667 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:13:34,669 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:13:34,682 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:13:34,683 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:34,683 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:34,684 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:13:34,687 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:13:34,687 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:13:34,687 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash 'TxHash_DivorceJudgment_Obstruction'
+
+This...
+2025-05-22 11:13:34,687 - api - INFO - Successfully extracted summary
+2025-05-22 11:13:34,687 - api - INFO - Evaluation completed successfully
+2025-05-22 11:23:59,669 - api - INFO - Starting evaluation for transaction: 0x3ddf2e8b358ea6c729b56dddd08fca8eaac9732302ddf2f3a0f7d9b5813f2bc8
+2025-05-22 11:23:59,669 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3ddf2e8b358ea6c729b56dddd08fca8eaac9732302ddf2f3a0f7d9b5813f2bc8', 'request_reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 11:23:59,675 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:23:59,679 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:03,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:03,074 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:03,074 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:03,074 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:03,075 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:03,078 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:06,473 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:06,474 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:06,474 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:06,474 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:06,476 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:06,479 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:09,783 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:09,787 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:09,788 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:09,788 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:09,789 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:09,795 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:13,083 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:13,084 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:13,084 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:13,084 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:13,086 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:13,091 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:24,830 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:24,843 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:24,843 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:24,843 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:24,845 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:24,848 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:24:24,848 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:24:24,848 - api - INFO - Result sample: ### Disclosure Request Evaluation Summary for Transaction Hash '0x3ddf2e8b358ea6c729b56dddd08fca8eaa...
+2025-05-22 11:24:24,848 - api - INFO - Successfully extracted summary
+2025-05-22 11:24:24,848 - api - INFO - Evaluation completed successfully
+2025-05-22 11:24:26,187 - api - INFO - Starting evaluation for transaction: 0x3ddf2e8b358ea6c729b56dddd08fca8eaac9732302ddf2f3a0f7d9b5813f2bc8
+2025-05-22 11:24:26,187 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3ddf2e8b358ea6c729b56dddd08fca8eaac9732302ddf2f3a0f7d9b5813f2bc8', 'request_reason': 'S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $17.48K exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.'}
+2025-05-22 11:24:26,192 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:24:26,196 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:29,734 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:29,753 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:29,753 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:29,753 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:29,754 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:29,757 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:33,139 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:33,140 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:33,140 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:33,140 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:33,141 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:33,145 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:35,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:35,898 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:35,898 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:35,898 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:35,899 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:35,904 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:39,393 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:39,395 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:39,395 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:39,395 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:39,401 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:24:50,197 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:24:50,198 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:24:50,198 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:50,198 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:50,199 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:24:50,202 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:24:50,202 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:24:50,202 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash '0x3ddf2e8b358ea6c729b56dddd08fca8eaac9732...
+2025-05-22 11:24:50,202 - api - INFO - Successfully extracted summary
+2025-05-22 11:24:50,202 - api - INFO - Evaluation completed successfully
+2025-05-22 11:31:40,852 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:33:42,093 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:34:42,682 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:35:00,132 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:35:41,332 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:35:54,195 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:36:22,282 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:37:19,964 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:38:39,212 - api - INFO - Starting evaluation for transaction: 0x4d2c15bfe2a9a93d1970fa9080898f18014b754556312097229a30a3fd5c517c
+2025-05-22 11:38:39,213 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x4d2c15bfe2a9a93d1970fa9080898f18014b754556312097229a30a3fd5c517c', 'request_reason': 'S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $14.99B exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.'}
+2025-05-22 11:38:39,221 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:38:39,230 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:38:49,598 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:38:49,599 - openai._base_client - INFO - Retrying request to /chat/completions in 0.455123 seconds
+2025-05-22 11:38:55,341 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:38:55,342 - openai._base_client - INFO - Retrying request to /chat/completions in 0.935409 seconds
+2025-05-22 11:39:01,541 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:39:01,552 - root - ERROR - LiteLLM call failed: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:39:01,554 - api - ERROR - Error during evaluation: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:39:01,559 - api - ERROR - Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 724, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 652, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 929, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1276, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 949, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1057, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1831, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1804, in completion
+    response = openai_chat_completions.completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 735, in completion
+    raise OpenAIError(
+litellm.llms.openai.common_utils.OpenAIError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/api.py", line 109, in evaluate_transaction
+    result = crew.kickoff(inputs=inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 663, in kickoff
+    result = self._run_sequential_process()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 775, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 878, in _execute_tasks
+    task_output = task.execute_sync(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 347, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 491, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 411, in _execute_core
+    result = agent.execute_task(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 387, in execute_task
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 363, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 459, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 123, in invoke
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 112, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 155, in _invoke_loop
+    answer = get_llm_response(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 157, in get_llm_response
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 148, in get_llm_response
+    answer = llm.call(
+             ^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 890, in call
+    return self._handle_non_streaming_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 729, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1255, in wrapper
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1133, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 3216, in completion
+    raise exception_type(
+          ^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2224, in exception_type
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 459, in exception_type
+    raise APIError(
+litellm.exceptions.APIError: litellm.APIError: APIError: OpenAIException - Internal server error
+
+2025-05-22 11:43:40,362 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:46:16,180 - api - INFO - Starting evaluation for transaction: 0xd21fa1ce332d7023e54f880eca6d57baeb73a1d9986a6f115669d18addefeafe
+2025-05-22 11:46:16,180 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0xd21fa1ce332d7023e54f880eca6d57baeb73a1d9986a6f115669d18addefeafe', 'request_reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 11:46:16,186 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:46:16,194 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:46:21,640 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:46:21,640 - openai._base_client - INFO - Retrying request to /chat/completions in 0.419052 seconds
+2025-05-22 11:46:28,512 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:46:28,513 - openai._base_client - INFO - Retrying request to /chat/completions in 0.803661 seconds
+2025-05-22 11:46:34,729 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:46:34,745 - root - ERROR - LiteLLM call failed: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:46:34,747 - api - ERROR - Error during evaluation: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:46:34,752 - api - ERROR - Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 724, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 652, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 929, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1276, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 949, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1057, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1831, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1804, in completion
+    response = openai_chat_completions.completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 735, in completion
+    raise OpenAIError(
+litellm.llms.openai.common_utils.OpenAIError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/api.py", line 109, in evaluate_transaction
+    result = crew.kickoff(inputs=inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 663, in kickoff
+    result = self._run_sequential_process()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 775, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 878, in _execute_tasks
+    task_output = task.execute_sync(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 347, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 491, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 411, in _execute_core
+    result = agent.execute_task(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 387, in execute_task
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 363, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 459, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 123, in invoke
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 112, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 155, in _invoke_loop
+    answer = get_llm_response(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 157, in get_llm_response
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 148, in get_llm_response
+    answer = llm.call(
+             ^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 890, in call
+    return self._handle_non_streaming_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 729, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1255, in wrapper
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1133, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 3216, in completion
+    raise exception_type(
+          ^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2224, in exception_type
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 459, in exception_type
+    raise APIError(
+litellm.exceptions.APIError: litellm.APIError: APIError: OpenAIException - Internal server error
+
+2025-05-22 11:50:35,311 - api - INFO - Starting evaluation for transaction: TxHash_DivorceJudgment_Obstruction
+2025-05-22 11:50:35,312 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': 'TxHash_DivorceJudgment_Obstruction', 'request_reason': 'Court Appointed Forensic Audit Enforcement of Divorce Judgment Asset Concealment'}
+2025-05-22 11:50:35,318 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:50:35,323 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:50:41,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:50:41,210 - openai._base_client - INFO - Retrying request to /chat/completions in 0.383712 seconds
+2025-05-22 11:50:52,008 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:50:52,009 - openai._base_client - INFO - Retrying request to /chat/completions in 0.964445 seconds
+2025-05-22 11:50:58,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-05-22 11:50:58,303 - root - ERROR - LiteLLM call failed: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:50:58,304 - api - ERROR - Error during evaluation: litellm.APIError: APIError: OpenAIException - Internal server error
+2025-05-22 11:50:58,308 - api - ERROR - Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 724, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 652, in completion
+    ) = self.make_sync_openai_chat_completion_request(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/logging_utils.py", line 149, in sync_wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 471, in make_sync_openai_chat_completion_request
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 453, in make_sync_openai_chat_completion_request
+    raw_response = openai_client.chat.completions.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_legacy_response.py", line 364, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 929, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1276, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 949, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1042, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1091, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1057, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1831, in completion
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 1804, in completion
+    response = openai_chat_completions.completion(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/llms/openai/openai.py", line 735, in completion
+    raise OpenAIError(
+litellm.llms.openai.common_utils.OpenAIError: Error code: 500 - {'error': {'message': 'Internal server error', 'type': 'auth_subrequest_error', 'param': None, 'code': 'internal_error'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/api.py", line 109, in evaluate_transaction
+    result = crew.kickoff(inputs=inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 663, in kickoff
+    result = self._run_sequential_process()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 775, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/crew.py", line 878, in _execute_tasks
+    task_output = task.execute_sync(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 347, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 491, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/task.py", line 411, in _execute_core
+    result = agent.execute_task(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 387, in execute_task
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 363, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agent.py", line 459, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 123, in invoke
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 112, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/agents/crew_agent_executor.py", line 155, in _invoke_loop
+    answer = get_llm_response(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 157, in get_llm_response
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/utilities/agent_utils.py", line 148, in get_llm_response
+    answer = llm.call(
+             ^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 890, in call
+    return self._handle_non_streaming_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/crewai/llm.py", line 729, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1255, in wrapper
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/utils.py", line 1133, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/main.py", line 3216, in completion
+    raise exception_type(
+          ^^^^^^^^^^^^^^^
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 2224, in exception_type
+    raise e
+  File "/Users/michi/L-Documents/the_application_layer/EVE_PROTOCOL/DBW/dbw_project/tamo_junto/.venv/lib/python3.11/site-packages/litellm/litellm_core_utils/exception_mapping_utils.py", line 459, in exception_type
+    raise APIError(
+litellm.exceptions.APIError: litellm.APIError: APIError: OpenAIException - Internal server error
+
+2025-05-22 11:51:42,828 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:51:47,310 - api - INFO - Starting evaluation for transaction: TxHash_DivorceJudgment_Obstruction
+2025-05-22 11:51:47,311 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': 'TxHash_DivorceJudgment_Obstruction', 'request_reason': 'Court Appointed Forensic Audit Enforcement of Divorce Judgment Asset Concealment'}
+2025-05-22 11:51:47,316 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:51:47,323 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:51:51,672 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:51:51,676 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:51:51,676 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:51,676 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:51,677 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:51,682 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:51:56,367 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:51:56,368 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:51:56,368 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:56,368 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:56,369 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:51:56,374 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:52:01,198 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:52:01,199 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:52:01,199 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:01,199 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:01,201 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:01,205 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:52:05,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:52:05,756 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:52:05,756 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:05,756 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:05,757 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:05,762 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:52:18,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:52:18,217 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:52:18,218 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:18,218 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:18,218 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:52:18,223 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:52:18,223 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:52:18,223 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash 'TxHash_DivorceJudgment_Obstruction'
+
+## S...
+2025-05-22 11:52:18,223 - api - INFO - Successfully extracted summary
+2025-05-22 11:52:18,223 - api - INFO - Evaluation completed successfully
+2025-05-22 11:55:18,190 - api - INFO - Starting evaluation for transaction: 0x3e5eec5a72d69924439dcf063b7a5c077a15493c8c879ef0ba091659cf1b4cd3
+2025-05-22 11:55:18,191 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3e5eec5a72d69924439dcf063b7a5c077a15493c8c879ef0ba091659cf1b4cd3', 'request_reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 11:55:18,198 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:55:18,204 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:55:21,893 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:55:21,894 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:55:21,894 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:21,894 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:21,895 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:21,898 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:55:28,010 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:55:28,020 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:55:28,020 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:28,020 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:28,022 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:28,026 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:55:31,122 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:55:31,128 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:55:31,128 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:31,128 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:31,129 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:31,135 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:55:34,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:55:34,912 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:55:34,913 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:34,913 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:34,914 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:34,919 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:55:48,738 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:55:48,742 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:55:48,742 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:48,742 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:48,742 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:55:48,747 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:55:48,747 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:55:48,747 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash '0x3e5eec5a72d69924439dcf063b7a5c077a15493...
+2025-05-22 11:55:48,747 - api - INFO - Successfully extracted summary
+2025-05-22 11:55:48,747 - api - INFO - Evaluation completed successfully
+2025-05-22 11:56:06,470 - api - INFO - Starting evaluation for transaction: 0x3e5eec5a72d69924439dcf063b7a5c077a15493c8c879ef0ba091659cf1b4cd3
+2025-05-22 11:56:06,470 - api - INFO - Inputs prepared: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3e5eec5a72d69924439dcf063b7a5c077a15493c8c879ef0ba091659cf1b4cd3', 'request_reason': 'S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $49.69K exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.'}
+2025-05-22 11:56:06,476 - api - INFO - Starting Guardian Evaluation...
+2025-05-22 11:56:06,480 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:56:11,787 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:56:11,788 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:56:11,788 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:11,788 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:11,789 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:11,792 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:56:15,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:56:15,532 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:56:15,532 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:15,532 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:15,533 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:15,537 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:56:21,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:56:21,696 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:56:21,696 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:21,698 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:21,702 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:56:24,429 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:56:24,430 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:56:24,430 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:24,430 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:24,431 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:24,436 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 11:56:37,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 11:56:37,050 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 11:56:37,050 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:37,050 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:37,052 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 11:56:37,055 - api - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:56:37,055 - api - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 11:56:37,055 - api - INFO - Result sample: # Disclosure Request Evaluation Summary for Transaction Hash '0x3e5eec5a72d69924439dcf063b7a5c077a15...
+2025-05-22 11:56:37,055 - api - INFO - Successfully extracted summary
+2025-05-22 11:56:37,055 - api - INFO - Evaluation completed successfully
+2025-05-22 11:57:12,610 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:58:26,035 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 11:59:55,151 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:00:25,287 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:01:53,635 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:02:09,406 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:02:18,576 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:03:58,215 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:04:16,953 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:04:27,633 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:04:31,258 - api - INFO - Starting evaluation for job cbfe17c3-7923-4c71-8e53-16b38272c586, transaction: TxHash_DivorceJudgment_Obstruction
+2025-05-22 12:04:31,258 - api - INFO - Inputs prepared for job cbfe17c3-7923-4c71-8e53-16b38272c586: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': 'TxHash_DivorceJudgment_Obstruction', 'request_reason': 'Court Appointed Forensic Audit Enforcement of Divorce Judgment Asset Concealment'}
+2025-05-22 12:04:31,263 - api - INFO - Starting Guardian Evaluation for job cbfe17c3-7923-4c71-8e53-16b38272c586...
+2025-05-22 12:04:31,270 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:04:34,430 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:04:34,434 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:04:34,434 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:34,434 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:34,434 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:34,440 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:04:37,567 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:04:37,568 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:04:37,568 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:37,568 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:37,569 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:37,572 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:04:41,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:04:41,061 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:04:41,062 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:41,062 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:41,066 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:41,077 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:04:44,011 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:04:44,014 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:04:44,015 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:44,019 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:44,029 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:04:59,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:04:59,011 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:04:59,011 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:59,011 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:59,015 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:04:59,024 - api - INFO - Guardian Evaluation for job cbfe17c3-7923-4c71-8e53-16b38272c586 completed.
+2025-05-22 12:04:59,024 - api - INFO - Result type: <class 'str'>
+2025-05-22 12:04:59,024 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash 'TxHash_DivorceJudgment_Obstruction'
+
+This...
+2025-05-22 12:04:59,025 - api - INFO - Job cbfe17c3-7923-4c71-8e53-16b38272c586 completed successfully. Results at tamo_junto_jobs/cbfe17c3-7923-4c71-8e53-16b38272c586/result.txt
+2025-05-22 12:06:06,909 - api - INFO - Starting evaluation for job 72df7b1a-03d0-49da-9223-5a97babe93b5, transaction: 0x0be21dda2d6a5bbc7a3790ee4f17373092a2ed492cf966f6a75b53bb86e2df54
+2025-05-22 12:06:06,910 - api - INFO - Inputs prepared for job 72df7b1a-03d0-49da-9223-5a97babe93b5: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x0be21dda2d6a5bbc7a3790ee4f17373092a2ed492cf966f6a75b53bb86e2df54', 'request_reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 12:06:06,921 - api - INFO - Starting Guardian Evaluation for job 72df7b1a-03d0-49da-9223-5a97babe93b5...
+2025-05-22 12:06:06,927 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:06:10,430 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:06:10,433 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:06:10,434 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:10,434 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:10,438 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:10,447 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:06:13,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:06:13,905 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:06:13,906 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:13,906 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:13,909 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:13,919 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:06:17,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:06:17,032 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:06:17,032 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:17,032 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:17,035 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:17,042 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:06:19,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:06:19,844 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:06:19,844 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:19,844 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:19,847 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:19,856 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:06:32,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:06:32,090 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:06:32,090 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:32,090 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:32,096 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:06:32,103 - api - INFO - Guardian Evaluation for job 72df7b1a-03d0-49da-9223-5a97babe93b5 completed.
+2025-05-22 12:06:32,103 - api - INFO - Result type: <class 'str'>
+2025-05-22 12:06:32,103 - api - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash '0x0be21dda2d6a5bbc7a3790ee4f17373092a2ed4...
+2025-05-22 12:06:32,104 - api - INFO - Job 72df7b1a-03d0-49da-9223-5a97babe93b5 completed successfully. Results at tamo_junto_jobs/72df7b1a-03d0-49da-9223-5a97babe93b5/result.txt
+2025-05-22 12:07:28,109 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:10:57,798 - api - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:11:32,551 - api - INFO - OPENAI_API_KEY is set in environment
