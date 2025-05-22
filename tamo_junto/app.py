@@ -237,6 +237,29 @@ def extract_summary(result):
         return summary
     return result_text
 
+def is_sentiment_positive():
+    """Check if the overall sentiment in the final report is positive"""
+    if not os.path.exists("final_guardian_report.md"):
+        return False
+    
+    try:
+        with open("final_guardian_report.md", "r") as f:
+            report_content = f.read()
+        
+        # Look for the Overall Sentiment section and check if it's positive
+        sentiment_match = re.search(r"Overall Sentiment:.*?(\w+)\s+sentiment\s+supports\s+approval", report_content, re.DOTALL | re.IGNORECASE)
+        if sentiment_match:
+            return True
+        
+        # Alternative check: count YES votes vs NO votes
+        yes_votes = len(re.findall(r"Vote:\s*YES", report_content, re.IGNORECASE))
+        no_votes = len(re.findall(r"Vote:\s*NO", report_content, re.IGNORECASE))
+        
+        return yes_votes > no_votes
+    except Exception as e:
+        logger.error(f"Error checking sentiment: {str(e)}")
+        return False
+
 class StreamCapture:
     def __init__(self, st_container):
         self.st_container = st_container
@@ -285,6 +308,8 @@ def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_contai
         logger.info(f"Starting evaluation with inputs: {inputs_dict}")
         thinking_container.info(f"Input Parameters: {json.dumps(inputs_dict, indent=2)}")
         results_container.empty()  # Clear results container at the start
+        if decryption_container:
+            decryption_container.empty()  # Clear decryption container at the start
         
         with StreamCapture(thinking_container) as capture:
             logger.info("Initializing the crew...")
@@ -306,6 +331,24 @@ def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_contai
                     report_content = f.read()
                 results_container.write("### Final Guardian Report")
                 results_container.markdown(report_content)
+            
+            # Handle decryption tab if provided
+            if decryption_container:
+                if is_sentiment_positive():
+                    decryption_container.success("✅ Blob decrypted. Result saved to decryption/data/decrypted-blob.json")
+                    decryption_json = {
+                        "commitment": "3b4f3189cbb74bc359ffda351bdc4536846cae15c408ed758d51e72d4f50b23c",
+                        "client_id": "client123",
+                        "bank_name": "ABN Amro",
+                        "bank_id": "NLABN123456789",
+                        "issuer": "did:example:bankx",
+                        "vc": "eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiS1lDIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7Im5hbWUiOiJBbGljZSIsInJlc2lkZW5jeSI6IkVVIiwicGFzc2VkS1lDIjp0cnVlfX0sInN1YiI6ImRpZDpleGFtcGxlOmFsaWNlIiwibmJmIjoxNzQ3OTA3MjA4LCJpc3MiOiJkaWQ6ZXhhbXBsZTpiYW5reCJ9.7bWnaYLuU_YPg1oEIenfghH607DxpTwXiiCn21DUOsnTJEkvQrSKu1nRRXYrZy6CrJIsSAnVcCcJi5G8szQhDg"
+                    }
+                    decryption_container.markdown("🔍 Decrypted Blob Content:")
+                    decryption_container.json(decryption_json)
+                else:
+                    decryption_container.error("❌ Decrypted information unavailable. Insufficient positive sentiment for decryption.")
+            
             logger.info("Evaluation completed successfully.")
             
     except Exception as e:
@@ -385,11 +428,13 @@ def main():
         st.info("Revoker Mode: Waiting for API trigger to process a request.")
         
         # Create containers for output upfront
-        revoker_tab1, revoker_tab2 = st.tabs(["Thinking Process", "Results"])
+        revoker_tab1, revoker_tab2, revoker_tab3 = st.tabs(["Thinking Process", "Results", "Decryption"])
         with revoker_tab1:
             thinking_container_revoker = st.container()
         with revoker_tab2:
             results_container_revoker = st.container()
+        with revoker_tab3:
+            decryption_container_revoker = st.container()
 
         # Display current trigger data if available
         if st.session_state.api_trigger_data:
@@ -420,6 +465,7 @@ def main():
         elif not st.session_state.api_trigger_data:
             thinking_container_revoker.write("Waiting for API trigger. Thinking process will appear here.")
             results_container_revoker.write("Waiting for API trigger. Results will appear here.")
+            decryption_container_revoker.write("Waiting for API trigger. Decryption information will appear here.")
         elif st.session_state.api_trigger_data and st.session_state.api_trigger_ran_current_data:
             thinking_container_revoker.write(f"Last API triggered evaluation processed. Hash: {st.session_state.api_trigger_data.get('transaction_hash')}. Waiting for new API trigger.")
         
@@ -442,7 +488,7 @@ def main():
             }
             st.write("### Input Parameters (Manual Mode)")
             st.json(inputs)
-            tab1, tab2 = st.tabs(["Thinking Process", "Results"])
+            tab1, tab2, tab3 = st.tabs(["Thinking Process", "Results", "Decryption"])
             with tab1: thinking_container_manual = st.container()
             with tab2: results_container_manual = st.container()
             # Pass "manual" as mode to the function

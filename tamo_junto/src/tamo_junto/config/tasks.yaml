@@ -41,7 +41,22 @@ collation_task:
     Summarize the findings and present a final overview.
   expected_output: >
     20 lines report summarizing each guardian's vote and justification, highlighting agreements, disagreements, and the overall sentiment regarding the disclosure request for transaction hash '{transaction_hash}'.
-    Formatted as markdown without '```'.
+    Formatted as markdown without 
+    It will be further processed with this code 
+    
+    with open("final_guardian_report.md", "r") as f:
+            report_content = f.read()
+        
+        # Look for the Overall Sentiment section and check if it's positive
+        sentiment_match = re.search(r"Overall Sentiment:.*?(\w+)\s+sentiment\s+supports\s+approval", report_content, re.DOTALL | re.IGNORECASE)
+        if sentiment_match:
+            return True
+        
+        # Alternative check: count YES votes vs NO votes
+        yes_votes = len(re.findall(r"Vote:\s*YES", report_content, re.IGNORECASE))
+        no_votes = len(re.findall(r"Vote:\s*NO", report_content, re.IGNORECASE))
+        
+        '```'.
   agent: collation_analyst
   context:
     - evaluate_disclosure_regulatory
