@@ -1415,3 +1415,101 @@ LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
 2025-05-22 14:21:26,685 - __main__ - INFO - Evaluation completed successfully.
 2025-05-22 14:21:26,686 - __main__ - INFO - System BUSY flag cleared
 2025-05-22 14:21:26,686 - __main__ - INFO - System busy flag cleared after evaluation
+2025-05-22 14:24:52,074 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:24:52,074 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 14:24:52,074 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 14:24:52,074 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 14:28:47,951 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:28:47,951 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 14:28:47,951 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 14:28:47,952 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 14:28:53,303 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:00,592 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:01,057 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:08,003 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:08,453 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:30,851 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:31,317 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:35,861 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747916975.861032}
+2025-05-22 14:29:35,861 - __main__ - INFO - Trigger request successful: 0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa, S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.
+2025-05-22 14:29:42,586 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747916982.585693}
+2025-05-22 14:29:42,586 - __main__ - INFO - Trigger request successful: 0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
+2025-05-22 14:29:45,893 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:45,895 - __main__ - INFO - Processed trigger file with data: {'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747916982.585693}
+2025-05-22 14:29:45,895 - __main__ - INFO - Found trigger file with data: {'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747916982.585693}
+2025-05-22 14:29:45,896 - __main__ - INFO - API trigger detected. Session state updated. Forcing Revoker Mode.
+2025-05-22 14:29:45,955 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:29:45,956 - __main__ - INFO - Revoker Mode: Auto-processing API triggered request: {'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 14:29:45,957 - __main__ - INFO - System marked as BUSY with transaction: 0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa (mode: revoker)
+2025-05-22 14:29:45,957 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3f15f23a84e7b7c48a36522d3e1de1f79e4d09af5262a0050170cfe791048afa', 'request_reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 14:29:45,957 - __main__ - INFO - Initializing the crew...
+2025-05-22 14:29:45,965 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 14:29:45,975 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:29:48,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:29:48,707 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:29:48,707 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:48,707 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:48,708 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:48,716 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:29:52,321 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:29:52,333 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:29:52,334 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:52,334 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:52,336 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:52,357 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:29:55,922 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:29:55,958 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:29:55,958 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:55,959 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:55,961 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:29:55,986 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:30:00,435 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:30:00,438 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:30:00,438 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:00,438 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:00,442 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:00,468 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:30:01,534 - __main__ - WARNING - Trigger request rejected: System busy with another revoker evaluation
+2025-05-22 14:30:01,534 - __main__ - WARNING - Trigger request rejected (busy): 0xa9bd8e7ed1376e524b5613759db36c88f3ee59e919a63fba682f9721d4453635
+2025-05-22 14:30:13,753 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:30:13,756 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:30:13,756 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:13,759 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:13,782 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 14:30:13,782 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 14:30:13,782 - __main__ - INFO - Result sample: # Guardian Evaluation Report on Disclosure Request for Transaction Hash  
+**Transaction Hash:** 0x3f...
+2025-05-22 14:30:13,783 - __main__ - INFO - Successfully extracted summary
+2025-05-22 14:30:13,784 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 14:30:13,784 - __main__ - INFO - System BUSY flag cleared
+2025-05-22 14:30:13,784 - __main__ - INFO - System busy flag cleared after evaluation
+2025-05-22 14:30:13,784 - __main__ - INFO - Revoker Mode: API trigger processing complete. Flag 'api_trigger_ran_current_data' set to True.
+2025-05-22 14:30:27,405 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747917027.404381}
+2025-05-22 14:30:27,405 - __main__ - INFO - Trigger request successful: 0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce, S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.
+2025-05-22 14:30:42,963 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:30:42,964 - __main__ - INFO - Processed trigger file with data: {'transaction_hash': '0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747917027.404381}
+2025-05-22 14:30:42,964 - __main__ - INFO - Found trigger file with data: {'transaction_hash': '0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747917027.404381}
+2025-05-22 14:30:42,965 - __main__ - INFO - API trigger detected. Session state updated. Forcing Revoker Mode.
+2025-05-22 14:30:43,018 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:30:43,020 - __main__ - INFO - Revoker Mode: Auto-processing API triggered request: {'transaction_hash': '0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 14:30:43,020 - __main__ - INFO - System marked as BUSY with transaction: 0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce (mode: revoker)
+2025-05-22 14:30:43,020 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x3339c44ea4511ae0cabcf9185d7a0dfa1a1da6f22c520551d7c6014ffa69ccce', 'request_reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 14:30:43,021 - __main__ - INFO - Initializing the crew...
+2025-05-22 14:30:43,027 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 14:30:43,033 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 14:30:43,908 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 14:30:46,159 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 14:30:46,178 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 14:30:46,178 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:46,179 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:46,181 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 14:30:46,181 - __main__ - INFO - System BUSY flag cleared
+2025-05-22 14:30:46,181 - __main__ - INFO - System busy flag cleared after evaluation
+2025-05-22 14:30:48,064 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x583d3d2ce82baeaa8955969070fd1f0896896baf8e0ea7824b16c2ce9974825e', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747917048.063606}
+2025-05-22 14:30:48,064 - __main__ - INFO - Trigger request successful: 0x583d3d2ce82baeaa8955969070fd1f0896896baf8e0ea7824b16c2ce9974825e, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
