@@ -1087,3 +1087,320 @@ LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
 2025-05-22 12:31:23,399 - __main__ - INFO - OPENAI_API_KEY is set in environment
 2025-05-22 12:32:10,645 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252}
 2025-05-22 12:32:10,646 - __main__ - INFO - Trigger request successful: 0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
+2025-05-22 12:52:46,290 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:52:46,290 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 12:52:46,290 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 12:52:46,369 - __main__ - INFO - Processed trigger file with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252}
+2025-05-22 12:52:46,369 - __main__ - INFO - Found trigger file with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252}
+2025-05-22 12:52:46,369 - __main__ - INFO - API trigger detected. Session state updated. Forcing Revoker Mode.
+2025-05-22 12:52:46,410 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:52:46,411 - __main__ - INFO - Revoker Mode: Auto-processing API triggered request: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 12:52:46,411 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'request_reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 12:52:46,412 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:52:46,425 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:52:46,435 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:52:48,925 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:52:48,941 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:52:48,941 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:48,941 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:48,942 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:48,960 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:52:51,686 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:52:51,690 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:52:51,690 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:51,695 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:51,715 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:52:54,842 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:52:54,960 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:52:54,962 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:54,963 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:54,967 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:54,991 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:52:57,890 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:52:58,002 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:52:58,003 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:58,004 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:58,008 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:52:58,033 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:00,014 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:53:01,924 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:53:01,929 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'Suspicious transaction pattern detected'}
+2025-05-22 12:53:01,930 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:53:01,942 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:53:01,950 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:04,974 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:04,978 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:04,979 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:04,979 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:04,984 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:04,998 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:07,682 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:07,689 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:07,690 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:07,690 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:07,693 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:07,715 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:09,070 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:09,152 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:09,153 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:09,153 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:09,213 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:11,797 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:11,801 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:11,801 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:11,802 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:11,804 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:11,826 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:16,118 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:16,121 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:16,121 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:16,122 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:16,124 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:16,148 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:53:29,652 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:53:29,739 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:53:29,740 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:29,740 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:29,743 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:53:29,761 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:53:29,761 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:53:29,761 - __main__ - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash '0x9491a40dab86447b8b97505c3dabcf61'
+
+This...
+2025-05-22 12:53:29,762 - __main__ - INFO - Successfully extracted summary
+2025-05-22 12:53:29,762 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 12:58:15,785 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:58:15,785 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 12:58:15,785 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 12:58:15,786 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 12:58:18,454 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:58:18,459 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'Suspicious transaction pattern detected'}
+2025-05-22 12:58:18,460 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:58:18,473 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:58:18,486 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:58:21,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:58:21,630 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:58:21,630 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:21,631 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:21,631 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:21,647 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:58:25,078 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:58:25,084 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:58:25,084 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:25,085 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:25,089 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:25,106 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:58:28,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:58:28,076 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:58:28,077 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:28,077 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:28,081 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:28,104 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:58:31,543 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:58:31,552 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:58:31,553 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:31,553 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:31,561 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:31,584 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:58:44,271 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:58:44,275 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:58:44,275 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:44,275 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:44,279 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:58:44,298 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:58:44,299 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:58:44,299 - __main__ - INFO - Result sample: Summary Report on Disclosure Request for Transaction Hash '0x9491a40dab86447b8b97505c3dabcf61'
+
+Regu...
+2025-05-22 12:58:44,299 - __main__ - INFO - Successfully extracted summary
+2025-05-22 12:58:44,301 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 12:59:06,130 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:59:06,135 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'Random moron asks'}
+2025-05-22 12:59:06,136 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:59:06,148 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:59:06,157 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:59:08,308 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:59:08,313 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:59:08,314 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:08,314 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:08,320 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:08,333 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:59:12,960 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:59:12,965 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:59:12,966 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:12,966 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:12,973 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:12,988 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:59:17,060 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:59:17,066 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:59:17,067 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:17,068 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:17,072 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:17,093 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:59:20,443 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:59:20,447 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:59:20,447 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:20,448 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:20,451 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:20,477 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:59:30,272 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:59:30,278 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:59:30,279 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:30,279 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:30,283 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:59:30,301 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:59:30,301 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:59:30,301 - __main__ - INFO - Result sample: # Guardian Agents' Evaluations and Votes Summary Report  
+## Transaction hash: 0x9491a40dab86447b8b9...
+2025-05-22 12:59:30,301 - __main__ - INFO - Successfully extracted summary
+2025-05-22 12:59:30,302 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 13:00:01,125 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:00:01,129 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'FBI CIA and HEAD OF WORLD request with solid proofs'}
+2025-05-22 13:00:01,130 - __main__ - INFO - Initializing the crew...
+2025-05-22 13:00:01,140 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 13:00:01,148 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:00:03,437 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:00:03,440 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:00:03,440 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:03,443 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:03,460 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:00:07,597 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:00:07,604 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:00:07,605 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:07,605 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:07,607 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:07,626 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:00:12,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:00:12,458 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:00:12,458 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:12,458 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:12,463 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:12,483 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:00:16,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:00:16,089 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:00:16,090 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:16,090 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:16,093 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:16,120 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:00:30,313 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:00:30,341 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:00:30,342 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:30,342 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:30,344 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:00:30,361 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 13:00:30,361 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 13:00:30,361 - __main__ - INFO - Result sample: # Guardian Report on Disclosure Request for Transaction Hash '0x9491a40dab86447b8b97505c3dabcf61'
+
+#...
+2025-05-22 13:00:30,361 - __main__ - INFO - Successfully extracted summary
+2025-05-22 13:00:30,362 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 13:01:14,665 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:01:14,672 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'FBI request - Money Laundry symptoms present.'}
+2025-05-22 13:01:14,673 - __main__ - INFO - Initializing the crew...
+2025-05-22 13:01:14,685 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 13:01:14,692 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:17,261 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:17,264 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:17,265 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:17,265 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:17,270 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:17,284 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:20,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:20,398 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:20,398 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:20,398 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:20,402 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:20,420 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:23,649 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:23,653 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:23,654 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:23,654 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:23,658 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:23,679 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:28,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:28,054 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:28,055 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:28,055 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:28,057 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:28,083 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:35,747 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:01:38,718 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:01:43,637 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:01:43,642 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'Suspicious transaction pattern detected'}
+2025-05-22 13:01:43,643 - __main__ - INFO - Initializing the crew...
+2025-05-22 13:01:43,656 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 13:01:43,664 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:44,269 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:44,272 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:44,272 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:44,272 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:44,324 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:46,805 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:46,808 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:46,809 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:46,809 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:46,815 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:46,830 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:52,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:52,054 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:52,055 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:52,055 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:52,058 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:52,078 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:01:56,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:01:56,865 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:01:56,866 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:56,866 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:56,867 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:01:56,880 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:02:01,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:02:01,426 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:02:01,427 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:01,427 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:01,431 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:01,453 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 13:02:21,817 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 13:02:21,820 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 13:02:21,821 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:21,821 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:21,825 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 13:02:21,843 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 13:02:21,843 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 13:02:21,843 - __main__ - INFO - Result sample: # Guardian Evaluation Report on Disclosure Request for Transaction Hash '0x9491a40dab86447b8b97505c3...
+2025-05-22 13:02:21,843 - __main__ - INFO - Successfully extracted summary
+2025-05-22 13:02:21,844 - __main__ - INFO - Evaluation completed successfully.
