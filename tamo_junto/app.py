@@ -300,7 +300,7 @@ class StreamCapture:
         self.auto_update = not self.auto_update
         return self.auto_update
 
-def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_container, results_container, mode="revoker"):
+def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_container, results_container, mode="revoker",decryption_container=None):
     try:
         # Set system busy with current transaction hash and mode
         set_system_busy(inputs_dict.get("transaction_hash", "unknown"), mode=mode)
@@ -356,6 +356,8 @@ def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_contai
         logger.error(traceback.format_exc())
         thinking_container.error(f"An error occurred during evaluation: {str(e)}")
         results_container.error(f"Evaluation failed. See thinking process for details.")
+        if decryption_container:
+            decryption_container.error("❌ Decrypted information unavailable.")
     finally:
         # Always clear the system busy flag when done, regardless of success or failure
         clear_system_busy()
@@ -455,7 +457,7 @@ def main():
                 "request_reason": st.session_state.api_trigger_data['reason']
             }
             thinking_container_revoker.empty() 
-            run_crew_evaluation_and_display(revoker_inputs, thinking_container_revoker, results_container_revoker, mode="revoker")
+            run_crew_evaluation_and_display(revoker_inputs, thinking_container_revoker, results_container_revoker, mode="revoker",decryption_container=decryption_container_revoker)
             st.session_state.api_trigger_ran_current_data = True 
             logger.info("Revoker Mode: API trigger processing complete. Flag 'api_trigger_ran_current_data' set to True.")
         
@@ -491,8 +493,9 @@ def main():
             tab1, tab2, tab3 = st.tabs(["Thinking Process", "Results", "Decryption"])
             with tab1: thinking_container_manual = st.container()
             with tab2: results_container_manual = st.container()
+            with tab3: decryption_container_manual = st.container()
             # Pass "manual" as mode to the function
-            run_crew_evaluation_and_display(inputs, thinking_container_manual, results_container_manual, mode="manual")
+            run_crew_evaluation_and_display(inputs, thinking_container_manual, results_container_manual, mode="manual",decryption_container=decryption_container_manual)
         except json.JSONDecodeError: st.error("Error: Invalid JSON format in custom inputs for Manual Mode.")
         except Exception as e: st.error(f"An error occurred in Manual Mode: {str(e)}"); st.error(traceback.format_exc())
 
