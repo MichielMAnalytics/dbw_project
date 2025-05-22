@@ -40,7 +40,7 @@ collation_task:
     Collate the evaluations and votes from the Regulatory Body, Major Financial Institution, Privacy Advocacy Organization, and Independent Auditor regarding the disclosure request for transaction hash '{transaction_hash}'.
     Summarize the findings and present a final overview.
   expected_output: >
-    A comprehensive report summarizing each guardian's vote and justification, highlighting agreements, disagreements, and the overall sentiment regarding the disclosure request for transaction hash '{transaction_hash}'.
+    20 lines report summarizing each guardian's vote and justification, highlighting agreements, disagreements, and the overall sentiment regarding the disclosure request for transaction hash '{transaction_hash}'.
     Formatted as markdown without '```'.
   agent: collation_analyst
   context:
