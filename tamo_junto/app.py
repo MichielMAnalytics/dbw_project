@@ -22,6 +22,7 @@ load_dotenv()
 # --- Global variables for API trigger ---
 API_LISTENER_PORT = 8502
 TRIGGER_FILE_PATH = "revoker_trigger.json"  # File-based signaling
+SYSTEM_BUSY_FILE_PATH = "system_busy.txt"  # File-based busy flag
 # --- End Global variables ---
 
 # Import from the installed tamo_junto package
@@ -46,9 +47,74 @@ else:
 
 ANSI_ESCAPE = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
 
+# --- System busy functions ---
+def is_system_busy(for_revoker_mode=True):
+    """
+    Check if the system is currently busy with an evaluation
+    
+    Parameters:
+    for_revoker_mode (bool): If True, only considers revoker mode runs as busy.
+                            If False, checks if any evaluation is running.
+    """
+    if not os.path.exists(SYSTEM_BUSY_FILE_PATH):
+        return False
+        
+    try:
+        with open(SYSTEM_BUSY_FILE_PATH, 'r') as f:
+            busy_data = json.load(f)
+            # If we're checking for the revoker mode and the current busy run is from manual mode,
+            # then we don't consider the system busy for revoker purposes
+            if for_revoker_mode and busy_data.get("mode") == "manual":
+                return False
+            return True
+    except:
+        # If we can't read the file properly, assume not busy
+        return False
+
+def set_system_busy(transaction_hash=None, mode="revoker"):
+    """
+    Mark the system as busy with the current transaction hash
+    
+    Parameters:
+    transaction_hash (str): The hash being processed
+    mode (str): Either "revoker" or "manual" to indicate which mode is running
+    """
+    try:
+        busy_data = {
+            "transaction_hash": transaction_hash,
+            "timestamp": time.time(),
+            "started_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "mode": mode
+        }
+        with open(SYSTEM_BUSY_FILE_PATH, 'w') as f:
+            json.dump(busy_data, f)
+        logger.info(f"System marked as BUSY with transaction: {transaction_hash} (mode: {mode})")
+        return True
+    except Exception as e:
+        logger.error(f"Error setting system busy: {e}")
+        return False
+
+def clear_system_busy():
+    """Clear the system busy flag"""
+    if os.path.exists(SYSTEM_BUSY_FILE_PATH):
+        try:
+            os.remove(SYSTEM_BUSY_FILE_PATH)
+            logger.info("System BUSY flag cleared")
+            return True
+        except Exception as e:
+            logger.error(f"Error clearing system busy flag: {e}")
+            return False
+    return True  # Already not busy
+# --- End system busy functions ---
+
 # --- File-based trigger functions ---
 def write_trigger_file(transaction_hash, reason):
-    """Write trigger data to file"""
+    """Write trigger data to file if system is not busy with another revoker evaluation"""
+    # First check if system is already busy with a revoker evaluation
+    if is_system_busy(for_revoker_mode=True):
+        logger.warning(f"Trigger request rejected: System busy with another revoker evaluation")
+        return False, "System is currently busy with another evaluation. Try again later."
+    
     trigger_data = {
         "transaction_hash": transaction_hash,
         "reason": reason,
@@ -58,10 +124,10 @@ def write_trigger_file(transaction_hash, reason):
         with open(TRIGGER_FILE_PATH, 'w') as f:
             json.dump(trigger_data, f)
         logger.info(f"Wrote trigger file: {TRIGGER_FILE_PATH} with data: {trigger_data}")
-        return True
+        return True, None
     except Exception as e:
         logger.error(f"Error writing trigger file: {e}")
-        return False
+        return False, str(e)
 
 def check_and_read_trigger_file():
     """Read and process trigger file if it exists"""
@@ -97,8 +163,8 @@ class TriggerHandler(http.server.SimpleHTTPRequestHandler):
             reason_param = query_params.get('reason', [None])[0]
 
             if hash_param and reason_param:
-                # Write to trigger file instead of using in-memory variables
-                success = write_trigger_file(hash_param, reason_param)
+                # Write to trigger file if system not busy
+                success, error_msg = write_trigger_file(hash_param, reason_param)
                 
                 if success:
                     self.send_response(200)
@@ -112,15 +178,28 @@ class TriggerHandler(http.server.SimpleHTTPRequestHandler):
                     self.wfile.write(json.dumps(response).encode('utf-8'))
                     logger.info(f"Trigger request successful: {hash_param}, {reason_param}")
                 else:
-                    self.send_response(500)
+                    # Return 503 Service Unavailable if system busy
+                    self.send_response(503)
                     self.send_header('Content-type', 'application/json')
                     self.end_headers()
-                    self.wfile.write(json.dumps({"status": "error", "message": "Failed to create trigger file"}).encode('utf-8'))
+                    self.wfile.write(json.dumps({
+                        "status": "busy", 
+                        "message": error_msg or "System is busy with another evaluation. Try again later."
+                    }).encode('utf-8'))
+                    logger.warning(f"Trigger request rejected (busy): {hash_param}")
             else:
                 self.send_response(400)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({"status": "error", "message": "Missing transaction_hash or reason"}).encode('utf-8'))
+        elif url_parts.path == '/status':
+            # Add a status endpoint to check if system is busy
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            busy_for_revoker = is_system_busy(for_revoker_mode=True)
+            status = "busy" if busy_for_revoker else "ready"
+            self.wfile.write(json.dumps({"status": status, "can_accept_revoker_requests": not busy_for_revoker}).encode('utf-8'))
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
@@ -198,8 +277,11 @@ class StreamCapture:
         self.auto_update = not self.auto_update
         return self.auto_update
 
-def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_container, results_container):
+def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_container, results_container, mode="revoker"):
     try:
+        # Set system busy with current transaction hash and mode
+        set_system_busy(inputs_dict.get("transaction_hash", "unknown"), mode=mode)
+        
         logger.info(f"Starting evaluation with inputs: {inputs_dict}")
         thinking_container.info(f"Input Parameters: {json.dumps(inputs_dict, indent=2)}")
         results_container.empty()  # Clear results container at the start
@@ -225,11 +307,16 @@ def run_crew_evaluation_and_display(inputs_dict: Dict[str, Any], thinking_contai
                 results_container.write("### Final Guardian Report")
                 results_container.markdown(report_content)
             logger.info("Evaluation completed successfully.")
+            
     except Exception as e:
         logger.error(f"Error during crew evaluation: {str(e)}")
         logger.error(traceback.format_exc())
         thinking_container.error(f"An error occurred during evaluation: {str(e)}")
         results_container.error(f"Evaluation failed. See thinking process for details.")
+    finally:
+        # Always clear the system busy flag when done, regardless of success or failure
+        clear_system_busy()
+        logger.info("System busy flag cleared after evaluation")
 
 def main():
     st.set_page_config(page_title="Guardian Evaluation System", page_icon="🛡️", layout="wide")
@@ -238,7 +325,7 @@ def main():
 
     # Check for trigger file - file-based signaling
     trigger_data = check_and_read_trigger_file()
-    if trigger_data:
+    if trigger_data and not is_system_busy():  # Only process if system not busy
         logger.info(f"Found trigger file with data: {trigger_data}")
         if 'api_trigger_data' not in st.session_state:
             st.session_state.api_trigger_data = {}
@@ -264,6 +351,11 @@ def main():
         st.session_state.api_trigger_ran_current_data = False
 
     mode = st.radio("Select Mode:", ('Manual Input', 'Revoker Mode'), key="mode_select")
+    
+    # Show system status 
+    system_status = "BUSY" if is_system_busy() else "READY"
+    status_color = "red" if is_system_busy() else "green"
+    st.markdown(f"<p style='color:{status_color};'>System Status: {system_status}</p>", unsafe_allow_html=True)
     
     if not os.environ.get("OPENAI_API_KEY"):
         st.error("❌ OpenAI API key is not configured. Please check your .env file.")
@@ -303,8 +395,11 @@ def main():
         if st.session_state.api_trigger_data:
             st.success(f"API Trigger received: Hash={st.session_state.api_trigger_data.get('transaction_hash')}")
 
-        # Auto-run if API trigger data is new and this is Revoker Mode
-        if st.session_state.api_trigger_data and not st.session_state.api_trigger_ran_current_data:
+        # Auto-run if API trigger data is new, this is Revoker Mode, and system not busy for revoker
+        if (st.session_state.api_trigger_data and 
+            not st.session_state.api_trigger_ran_current_data and 
+            not is_system_busy(for_revoker_mode=True)):
+                
             logger.info(f"Revoker Mode: Auto-processing API triggered request: {st.session_state.api_trigger_data}")
             thinking_container_revoker.warning("Processing API triggered request...")
             
@@ -315,10 +410,13 @@ def main():
                 "request_reason": st.session_state.api_trigger_data['reason']
             }
             thinking_container_revoker.empty() 
-            run_crew_evaluation_and_display(revoker_inputs, thinking_container_revoker, results_container_revoker)
+            run_crew_evaluation_and_display(revoker_inputs, thinking_container_revoker, results_container_revoker, mode="revoker")
             st.session_state.api_trigger_ran_current_data = True 
             logger.info("Revoker Mode: API trigger processing complete. Flag 'api_trigger_ran_current_data' set to True.")
         
+        elif is_system_busy(for_revoker_mode=True):
+            thinking_container_revoker.warning("System is currently busy with another evaluation. New API requests will be queued.")
+            results_container_revoker.info("Please wait for the current evaluation to complete.")
         elif not st.session_state.api_trigger_data:
             thinking_container_revoker.write("Waiting for API trigger. Thinking process will appear here.")
             results_container_revoker.write("Waiting for API trigger. Results will appear here.")
@@ -329,6 +427,7 @@ def main():
         if st.button("Reset Trigger State (for testing)"):
             st.session_state.api_trigger_data = None
             st.session_state.api_trigger_ran_current_data = False
+            clear_system_busy()  # Also clear busy status
             if os.path.exists(TRIGGER_FILE_PATH):
                 os.remove(TRIGGER_FILE_PATH)
             st.rerun()
@@ -346,7 +445,8 @@ def main():
             tab1, tab2 = st.tabs(["Thinking Process", "Results"])
             with tab1: thinking_container_manual = st.container()
             with tab2: results_container_manual = st.container()
-            run_crew_evaluation_and_display(inputs, thinking_container_manual, results_container_manual)
+            # Pass "manual" as mode to the function
+            run_crew_evaluation_and_display(inputs, thinking_container_manual, results_container_manual, mode="manual")
         except json.JSONDecodeError: st.error("Error: Invalid JSON format in custom inputs for Manual Mode.")
         except Exception as e: st.error(f"An error occurred in Manual Mode: {str(e)}"); st.error(traceback.format_exc())
 

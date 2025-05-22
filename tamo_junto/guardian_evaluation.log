@@ -1087,3 +1087,138 @@ LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
 2025-05-22 12:31:23,399 - __main__ - INFO - OPENAI_API_KEY is set in environment
 2025-05-22 12:32:10,645 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252}
 2025-05-22 12:32:10,646 - __main__ - INFO - Trigger request successful: 0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
+2025-05-22 12:36:17,269 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:36:17,270 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 12:36:17,270 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 12:36:17,270 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 12:36:17,365 - __main__ - INFO - Processed trigger file with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252}
+2025-05-22 12:36:17,365 - __main__ - INFO - Found trigger file with data: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252, 'processed_time': '2025-05-22 12:36:17'}
+2025-05-22 12:36:17,365 - __main__ - INFO - API trigger detected. Switched to Revoker Mode.
+2025-05-22 12:36:17,406 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:36:17,407 - __main__ - INFO - Revoker Mode: Auto-processing API triggered request: {'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747909930.645252, 'processed_time': '2025-05-22 12:36:17'}
+2025-05-22 12:36:17,408 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0xfb779a0ddca943aaf3fe92aebfbe2be6f4d6bade1aaa2e0b14e0238a51b26fec', 'request_reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.'}
+2025-05-22 12:36:17,408 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:36:17,415 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:36:17,424 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:36:20,244 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:36:20,258 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:36:20,258 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:20,259 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:20,259 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:20,274 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:36:23,580 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:36:23,581 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:36:23,581 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:23,582 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:23,596 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:36:26,316 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:36:27,307 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:36:27,311 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:36:27,311 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:27,311 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:27,315 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:36:39,037 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:18,517 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:19,165 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:23,831 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:24,294 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:25,544 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:26,648 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:45,535 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:37:45,535 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 12:37:45,535 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 12:37:45,535 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 12:39:30,589 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x9f56000465ef8bb611215f799ff9d8d2b5d0ea6ac1a9712f9d040da248eb7d5a', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747910370.58866}
+2025-05-22 12:39:30,589 - __main__ - INFO - Trigger request successful: 0x9f56000465ef8bb611215f799ff9d8d2b5d0ea6ac1a9712f9d040da248eb7d5a, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
+2025-05-22 12:39:32,053 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x9f56000465ef8bb611215f799ff9d8d2b5d0ea6ac1a9712f9d040da248eb7d5a', 'reason': 'S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $15.79K exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.', 'timestamp': 1747910372.0532749}
+2025-05-22 12:39:32,053 - __main__ - INFO - Trigger request successful: 0x9f56000465ef8bb611215f799ff9d8d2b5d0ea6ac1a9712f9d040da248eb7d5a, S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $15.79K exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.
+2025-05-22 12:45:03,049 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x56f3495b5d9ebc07c2b68b4aaf0f53d7a22f0a595cccbcfe92bec8e3ae3a09ef', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747910703.049685}
+2025-05-22 12:45:03,050 - __main__ - INFO - Trigger request successful: 0x56f3495b5d9ebc07c2b68b4aaf0f53d7a22f0a595cccbcfe92bec8e3ae3a09ef, S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.
+2025-05-22 12:45:25,237 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x56f3495b5d9ebc07c2b68b4aaf0f53d7a22f0a595cccbcfe92bec8e3ae3a09ef', 'reason': 'S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $14.11B exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.', 'timestamp': 1747910725.236952}
+2025-05-22 12:45:25,237 - __main__ - INFO - Trigger request successful: 0x56f3495b5d9ebc07c2b68b4aaf0f53d7a22f0a595cccbcfe92bec8e3ae3a09ef, S5a Daily Cumulative Volume Exceeded: On this day, the trading volume of $14.11B exceeded the threshold of $15K. This threshold is based on an AOM ballpark of $100K and a relative threshold of 15.0%.
+2025-05-22 12:45:55,958 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0xfcc6a5eddd08acd25802dbb6026ca91e22b29b885d3d07b0a377529d491ec2be', 'reason': 'S1 Fresh Wallet: The wallet has been inactive for the past 90 days, and its converted USD balance is $0 or less.', 'timestamp': 1747910755.957925}
+2025-05-22 12:45:55,958 - __main__ - INFO - Trigger request successful: 0xfcc6a5eddd08acd25802dbb6026ca91e22b29b885d3d07b0a377529d491ec2be, S1 Fresh Wallet: The wallet has been inactive for the past 90 days, and its converted USD balance is $0 or less.
+2025-05-22 12:46:21,615 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0xfcc6a5eddd08acd25802dbb6026ca91e22b29b885d3d07b0a377529d491ec2be', 'reason': 'S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.', 'timestamp': 1747910781.615652}
+2025-05-22 12:46:21,615 - __main__ - INFO - Trigger request successful: 0xfcc6a5eddd08acd25802dbb6026ca91e22b29b885d3d07b0a377529d491ec2be, S4 Interaction New Exchange: The address is interacting with a new exchange: OpenOcean.
+2025-05-22 12:47:41,513 - __main__ - INFO - Wrote trigger file: revoker_trigger.json with data: {'transaction_hash': '0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747910861.513587}
+2025-05-22 12:47:41,514 - __main__ - INFO - Trigger request successful: 0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b, S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.
+2025-05-22 12:47:46,146 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:46,148 - __main__ - INFO - Processed trigger file with data: {'transaction_hash': '0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747910861.513587}
+2025-05-22 12:47:46,148 - __main__ - INFO - Found trigger file with data: {'transaction_hash': '0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.', 'timestamp': 1747910861.513587}
+2025-05-22 12:47:46,148 - __main__ - INFO - API trigger detected. Session state updated. Forcing Revoker Mode.
+2025-05-22 12:47:46,206 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:46,207 - __main__ - INFO - Revoker Mode: Auto-processing API triggered request: {'transaction_hash': '0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b', 'reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 12:47:46,207 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x521b4c90d86b5a2eb88bcb52beb020375eae9d2abcc928ee4834482c30ff385b', 'request_reason': 'S2 Interaction New Protocol: The address is interacting with new protocols: MetaMask, dex-aggregator. There has been no previous interaction with these protocols.'}
+2025-05-22 12:47:46,207 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:47:46,216 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:47:46,225 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:47:47,058 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:47,856 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:49,059 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:47:49,070 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:47:49,070 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:47:49,070 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:47:49,071 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:47:49,350 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:51,300 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:47:51,595 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:50:25,346 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:50:41,473 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:50:43,160 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:50:43,161 - __main__ - INFO - Starting evaluation with inputs: {'topic': 'AI LLMs', 'current_year': '2025', 'transaction_hash': '0x9491a40dab86447b8b97505c3dabcf61', 'request_reason': 'Suspicious transaction pattern detected'}
+2025-05-22 12:50:43,161 - __main__ - INFO - Initializing the crew...
+2025-05-22 12:50:43,168 - __main__ - INFO - Starting Guardian Evaluation...
+2025-05-22 12:50:43,174 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:50:45,923 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:50:45,923 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:50:45,924 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:45,924 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:45,924 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:45,932 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:50:48,571 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:50:48,572 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:50:48,572 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:48,572 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:48,572 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:48,581 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:50:51,974 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:50:51,975 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:50:51,975 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:51,975 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:51,976 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:51,985 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:50:55,353 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:50:55,354 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:50:55,354 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:55,354 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:55,355 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:50:55,367 - LiteLLM - INFO - 
+LiteLLM completion() model= gpt-4.1-mini-2025-04-14; provider = openai
+2025-05-22 12:51:07,925 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-22 12:51:07,928 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2025-05-22 12:51:07,929 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:51:07,929 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:51:07,933 - LiteLLM - INFO - selected model name for cost calculation: openai/gpt-4.1-mini-2025-04-14
+2025-05-22 12:51:07,952 - __main__ - INFO - Received result of type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:51:07,952 - __main__ - INFO - Result type: <class 'crewai.crews.crew_output.CrewOutput'>
+2025-05-22 12:51:07,952 - __main__ - INFO - Result sample: # Final Report on Disclosure Request for Transaction Hash '0x9491a40dab86447b8b97505c3dabcf61'
+
+This...
+2025-05-22 12:51:07,952 - __main__ - INFO - Successfully extracted summary
+2025-05-22 12:51:07,953 - __main__ - INFO - Evaluation completed successfully.
+2025-05-22 12:58:28,581 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 12:58:28,581 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 12:58:28,581 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 12:58:28,581 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
+2025-05-22 13:48:51,603 - __main__ - INFO - OPENAI_API_KEY is set in environment
+2025-05-22 13:48:51,603 - __main__ - INFO - API listener thread initiated for port 8502.
+2025-05-22 13:48:51,603 - __main__ - INFO - API server flag set, listener should be running.
+2025-05-22 13:48:51,603 - __main__ - INFO - API listener started on http://localhost:8502/trigger_revoker
